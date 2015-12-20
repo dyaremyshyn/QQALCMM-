@@ -3,6 +3,9 @@
 #include "Libraries.h"
 class Tripulante
 {
+	string nome;
+	int posicao;
+
 public:
 	Tripulante();
 	~Tripulante();
