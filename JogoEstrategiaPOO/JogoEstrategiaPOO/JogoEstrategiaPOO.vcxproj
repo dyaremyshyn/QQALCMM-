@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -10,6 +10,30 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Consola.cpp" />
+    <ClCompile Include="Equipamentos.cpp" />
+    <ClCompile Include="Interecao.cpp" />
+    <ClCompile Include="Jogo.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Nave.cpp" />
+    <ClCompile Include="Sala.cpp" />
+    <ClCompile Include="Tripulacao.cpp" />
+    <ClCompile Include="Unidades.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Consola.h" />
+    <ClInclude Include="Equipamentos.h" />
+    <ClInclude Include="Inimigos.h" />
+    <ClInclude Include="Interacao.h" />
+    <ClInclude Include="Jogo.h" />
+    <ClInclude Include="Libraries.h" />
+    <ClInclude Include="Nave.h" />
+    <ClInclude Include="Sala.h" />
+    <ClInclude Include="Tripulacao.h" />
+    <ClInclude Include="Unidades.h" />
+    <ClInclude Include="Xenomorfos.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{995F1C95-C665-48A7-ABAD-0371E59B110B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -19,13 +43,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -77,30 +101,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\TP_JogoEstrategia\Consola.h" />
-    <ClInclude Include="..\..\TP_JogoEstrategia\Equipamentos.h" />
-    <ClInclude Include="..\..\TP_JogoEstrategia\Inimigos.h" />
-    <ClInclude Include="..\..\TP_JogoEstrategia\Interacao.h" />
-    <ClInclude Include="..\..\TP_JogoEstrategia\Jogo.h" />
-    <ClInclude Include="..\..\TP_JogoEstrategia\Libraries.h" />
-    <ClInclude Include="..\..\TP_JogoEstrategia\Nave.h" />
-    <ClInclude Include="..\..\TP_JogoEstrategia\Sala.h" />
-    <ClInclude Include="..\..\TP_JogoEstrategia\Tripulacao.h" />
-    <ClInclude Include="..\..\TP_JogoEstrategia\Unidades.h" />
-    <ClInclude Include="..\..\TP_JogoEstrategia\Xenomorfos.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\TP_JogoEstrategia\Consola.cpp" />
-    <ClCompile Include="..\..\TP_JogoEstrategia\Equipamentos.cpp" />
-    <ClCompile Include="..\..\TP_JogoEstrategia\Interecao.cpp" />
-    <ClCompile Include="..\..\TP_JogoEstrategia\Jogo.cpp" />
-    <ClCompile Include="..\..\TP_JogoEstrategia\main.cpp" />
-    <ClCompile Include="..\..\TP_JogoEstrategia\Nave.cpp" />
-    <ClCompile Include="..\..\TP_JogoEstrategia\Sala.cpp" />
-    <ClCompile Include="..\..\TP_JogoEstrategia\Tripulacao.cpp" />
-    <ClCompile Include="..\..\TP_JogoEstrategia\Unidades.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
