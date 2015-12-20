@@ -1,53 +1,183 @@
-#include <iostream>
-#include <string>
-#include <cstdlib>
-#include <sstream>
-
 #include "Jogo.h"
 
 Jogo::Jogo(int d){
 	dificuldade = d;
-	for (int i = 0; i < 10; i++) salas.push_back(new Sala(""));
-	salas.insert(salas.begin(), new Sala("Propulsor")); //Adicionar uma sala numa posição especifica do vetor
-	salas.insert(salas.begin()+4, new Sala("Sala Maquinas"));
-	salas.insert(salas.begin()+5, new Sala("Suporte de Vida"));
-	salas.insert(salas.begin()+6, new Sala("Controlo de Escudo"));
-	salas.insert(salas.begin()+7, new Sala("Ponte"));
-	salas.insert(salas.begin()+8, new Sala("Propulsor"));
+	salas.resize(12);
+	salas.at(0) = new Sala("Propulsor");
+	salas.at(4) = new Sala("Sala Maquinas");
+	salas.at(5) = new Sala("Suporte de Vida");
+	salas.at(6) = new Sala("Controlo Escudo");
+	salas.at(7) = new Sala("Ponte");
+	salas.at(8) = new Sala("Propulsor");
 }
 Jogo::~Jogo(){}
 
 
 void Jogo::AdicionaSala(int tipo)
 {
-	if (tipo=1) {
-		for (int i = 0; i < salas.size();i++)
-			if(salas[i]==NULL)
-		salas.push_back(new Sala("Propulsor Adicional"));
-		cout << "criado";
+	for (int i = 0; i < salas.size(); i++) {
+		if (tipo == 1) {
+				if (salas[i] == NULL) {
+					salas.at(i) = new Sala("Propulsor Adicional"); //Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
+					DesenhaSala(i, salas[i]->getnome());
+					break;
+				}
+		}
+		if (tipo == 2) {
+				if (salas[i] == NULL) {
+					salas.at(i) = new Sala("Beliche"); //Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
+					DesenhaSala(i, salas[i]->getnome());
+					break;
+				}
+		}
+		if (tipo == 3) {
+				if (salas[i] == NULL) {
+					salas.at(i) = new Sala("Raio Laser"); //Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
+					DesenhaSala(i, salas[i]->getnome());
+					break;
+				}
+		}
+		if (tipo == 4) {
+				if (salas[i] == NULL) {
+					salas.at(i) = new Sala("Auto-reparador"); //Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
+					DesenhaSala(i, salas[i]->getnome());
+					break;
+				}
+		}
+		if (tipo == 5) {
+				if (salas[i] == NULL) {
+					salas.at(i) = new Sala("Sistema Seguranca"); //Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
+					DesenhaSala(i, salas[i]->getnome());
+					break;
+				}
+		}
+		if (tipo == 6) {
+				if (salas[i] == NULL) {
+					salas.at(i) = new Sala("Enfermaria"); //Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
+					DesenhaSala(i, salas[i]->getnome());
+					break;
+				}
+		}
+		if (tipo == 7) {
+				if (salas[i] == NULL) {
+					salas.at(i) = new Sala("Sala Armas"); //Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
+					DesenhaSala(i, salas[i]->getnome());
+					break;
+				}
+		}
+		if (tipo == 8) {
+				if (salas[i] == NULL) {
+					salas.at(i) = new Sala("Alojamentos Capitao"); //Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
+					DesenhaSala(i, salas[i]->getnome());
+					break;
+				}
+		}
+		if (tipo == 9) {
+				if (salas[i] == NULL) {
+					salas.at(i) = new Sala("Oficina Robotica"); //Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
+					DesenhaSala(i, salas[i]->getnome());
+					break;
+				}
+		}
+		if (salas[11] != NULL)
+		{
+			cout << "Nao pode adicionar mais";
+			break;
+		}
 	}
-	if (tipo = 2) {
-		salas.push_back(new Sala("Beliche"));
+}
+
+void Jogo::DesenhaSala(int i, string n) {
+	regex regex_pattern("^[A-Za-z]+");
+	if (i == 1) //Primeira sala com "?" na primeira linha
+	{
+		c.gotoxy(16, 5);
+		if (!regex_match(n, regex_pattern)) //Verificar se não existem espaços nem caracteres na string
+		{
+			string n1, n2;
+			n1 = n.substr(0, n.find(" ")); //n1 fica com a primeira parte da string
+			n2 = n.substr(n.find(" ") + 1, 10); //n2 fica com a segunda parte da string (a seguir a um espaço ou a seguir a um "-")
+			cout << n1;
+			c.gotoxy(16, 6);
+			cout << n2;
+		}
+		else
+			cout << n;
 	}
-	if (tipo = 3) {
-		salas.push_back(new Sala("Raio Laser"));
+	if (i == 2) //Segunda sala com "?" na primeira linha
+	{
+		c.gotoxy(26, 5);
+		if (!regex_match(n, regex_pattern)) //Verificar se não existem espaços nem caracteres na string
+		{
+			string n1, n2;
+			n1 = n.substr(0, n.find(" ")); //n1 fica com a primeira parte da string
+			n2 = n.substr(n.find(" ") + 1, 10); //n2 fica com a segunda parte da string (a seguir a um espaço ou a seguir a um "-")
+			cout << n1;
+			c.gotoxy(26, 6);
+			cout << n2;
+		}
+		else
+			cout << n;
 	}
-	if (tipo = 4) {
-		salas.push_back(new Sala("Auto-Reparador"));
+	if (i == 3) //Terceira sala com "?" na primeira linha
+	{
+		c.gotoxy(36, 5);
+		if (!regex_match(n, regex_pattern)) //Verificar se não existem espaços nem caracteres na string
+		{
+			string n1, n2;
+			n1 = n.substr(0, n.find(" ")); //n1 fica com a primeira parte da string
+			n2 = n.substr(n.find(" ") + 1, 10); //n2 fica com a segunda parte da string (a seguir a um espaço ou a seguir a um "-")
+			cout << n1;
+			c.gotoxy(36, 6);
+			cout << n2;
+		}
+		else
+			cout << n;
 	}
-	if (tipo = 5) {
-		salas.push_back(new Sala("Sistema Seguranca"));
+	if (i == 9) //Quarta sala com "?" na Terceira linha
+	{
+		c.gotoxy(16, 21);
+		if (!regex_match(n, regex_pattern)) //Verificar se não existem espaços nem caracteres na string
+		{
+			string n1, n2;
+			n1 = n.substr(0, n.find(" ")); //n1 fica com a primeira parte da string
+			n2 = n.substr(n.find(" ") + 1, 10); //n2 fica com a segunda parte da string (a seguir a um espaço ou a seguir a um "-")
+			cout << n1;
+			c.gotoxy(16, 22);
+			cout << n2;
+		}
+		else
+			cout << n;
 	}
-	if (tipo = 6) {
-		salas.push_back(new Sala("Enfermaria"));
+	if (i == 10) //Quinta sala com "?" na Terceira linha
+	{
+		c.gotoxy(26, 21);
+		if (!regex_match(n, regex_pattern)) //Verificar se não existem espaços nem caracteres na string
+		{
+			string n1, n2;
+			n1 = n.substr(0, n.find(" ")); //n1 fica com a primeira parte da string
+			n2 = n.substr(n.find(" ") + 1, 10); //n2 fica com a segunda parte da string (a seguir a um espaço ou a seguir a um "-")
+			cout << n1;
+			c.gotoxy(26, 22);
+			cout << n2;
+		}
+		else
+			cout << n;
 	}
-	if (tipo = 7) {
-		salas.push_back(new Sala("Sala de Armas"));
+	if (i == 11) //Sexta sala com "?" na Terceira linha
+	{
+		c.gotoxy(36, 21);
+		if (!regex_match(n, regex_pattern)) //Verificar se não existem espaços nem caracteres na string
+		{
+			string n1, n2;
+			n1 = n.substr(0, n.find(" ")); //n1 fica com a primeira parte da string
+			n2 = n.substr(n.find(" ") + 1, 10); //n2 fica com a segunda parte da string (a seguir a um espaço ou a seguir a um "-")
+			cout << n1;
+			c.gotoxy(36, 22);
+			cout << n2;
+		}
+		else
+			cout << n;
 	}
-	if (tipo = 8) {
-		salas.push_back(new Sala("Alojamento Capitao"));
-	}
-	if (tipo = 1) {
-		salas.push_back(new Sala("Oficina Robotica"));
-	}
+
 }

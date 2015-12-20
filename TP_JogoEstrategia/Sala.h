@@ -14,6 +14,7 @@ private:
 	int integridade;
 public:
 	int reparasala();
+	string getnome() const;
 	Sala(string n);
 	~Sala();
 

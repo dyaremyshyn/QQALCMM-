@@ -12,6 +12,7 @@ class Tripulante;
 using namespace std;
 
 class Jogo{
+	Consola c;
     int dificuldade;
 	vector<Sala*> salas; //O jogador equipa a nave com diferentes salas
 	vector<Equipamento*> equipamentos; //O jogador equipa a nava com diferentes equipamentos
@@ -20,6 +21,7 @@ public:
     Jogo(int d);
     ~Jogo();
 	void AdicionaSala(int tipo);
+	void DesenhaSala(int i, string n);
 };
 
 

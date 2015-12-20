@@ -223,7 +223,7 @@ void Interacao::Novo_Jogo()
 {
 	string n;
 	
-	regex regex_pattern("^[0-9]?$");
+	regex regex_pattern("^[1-9]?$");
 	do
 	{
 		c.gotoxy(3, 35);

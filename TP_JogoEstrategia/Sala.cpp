@@ -7,3 +7,8 @@ Sala::Sala(string n)
 	saude = 100;
 }
 Sala::~Sala() {}
+
+string Sala::getnome() const
+{
+	return nome;
+}

@@ -1,11 +1,11 @@
-﻿Build started 19/12/2015 22:44:03.
-     1>Project "C:\Users\Pedro Camacho\Documents\GitHub\qqalcmm-\TP_JogoEstrategia_VS2015\TP_JogoEstrategia_VS2015\TP_JogoEstrategia_VS2015.vcxproj" on node 2 (Build target(s)).
+﻿Build started 20/12/2015 10:45:51.
+     1>Project "C:\Users\Pedro Camacho\Documents\GitHub\QQALCMM-\TP_JogoEstrategia_VS2015\TP_JogoEstrategia_VS2015\TP_JogoEstrategia_VS2015.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\TP_JogoEstrategia\Jogo.cpp
          Jogo.cpp
-     1>c:\users\pedro camacho\documents\github\qqalcmm-\tp_jogoestrategia\jogo.cpp(24): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\tp_jogoestrategia\jogo.cpp(18): warning C4018: '<': signed/unsigned mismatch
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Pedro Camacho\Documents\GitHub\qqalcmm-\TP_JogoEstrategia_VS2015\Debug\TP_JogoEstrategia_VS2015.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Pedro Camacho\Documents\GitHub\qqalcmm-\TP_JogoEstrategia_VS2015\Debug\TP_JogoEstrategia_VS2015.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Pedro Camacho\Documents\GitHub\qqalcmm-\TP_JogoEstrategia_VS2015\Debug\TP_JogoEstrategia_VS2015.lib" /MACHINE:X86 Debug\Consola.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Pedro Camacho\Documents\GitHub\QQALCMM-\TP_JogoEstrategia_VS2015\Debug\TP_JogoEstrategia_VS2015.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Pedro Camacho\Documents\GitHub\QQALCMM-\TP_JogoEstrategia_VS2015\Debug\TP_JogoEstrategia_VS2015.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Pedro Camacho\Documents\GitHub\QQALCMM-\TP_JogoEstrategia_VS2015\Debug\TP_JogoEstrategia_VS2015.lib" /MACHINE:X86 Debug\Consola.obj
          Debug\Equipamentos.obj
          Debug\Interecao.obj
          Debug\Jogo.obj
@@ -13,9 +13,9 @@
          Debug\Sala.obj
          "Debug\Tripulação.obj"
          Debug\Unidades.obj
-         TP_JogoEstrategia_VS2015.vcxproj -> C:\Users\Pedro Camacho\Documents\GitHub\qqalcmm-\TP_JogoEstrategia_VS2015\Debug\TP_JogoEstrategia_VS2015.exe
-     1>Done Building Project "C:\Users\Pedro Camacho\Documents\GitHub\qqalcmm-\TP_JogoEstrategia_VS2015\TP_JogoEstrategia_VS2015\TP_JogoEstrategia_VS2015.vcxproj" (Build target(s)).
+         TP_JogoEstrategia_VS2015.vcxproj -> C:\Users\Pedro Camacho\Documents\GitHub\QQALCMM-\TP_JogoEstrategia_VS2015\Debug\TP_JogoEstrategia_VS2015.exe
+     1>Done Building Project "C:\Users\Pedro Camacho\Documents\GitHub\QQALCMM-\TP_JogoEstrategia_VS2015\TP_JogoEstrategia_VS2015\TP_JogoEstrategia_VS2015.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.61
+Time Elapsed 00:00:01.77
