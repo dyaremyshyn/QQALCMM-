@@ -3,12 +3,18 @@
 #include "Libraries.h"
 class Tripulante
 {
-	string nome;
 	int posicao;
-
+	string nome;
+    
 public:
 	Tripulante();
 	~Tripulante();
+
+	string getNome();
+	void setNome(string n);
+
+	int getPosicao();
+	void setPosicao();
 
 private:
 
