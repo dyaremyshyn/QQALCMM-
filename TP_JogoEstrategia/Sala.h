@@ -1,7 +1,7 @@
 #ifndef SALA_H
 #define	SALA_H
 
-#include "Tripulação.h"
+#include "Tripulacao.h"
 
 
 using namespace std;

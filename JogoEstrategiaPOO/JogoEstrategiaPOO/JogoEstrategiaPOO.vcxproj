@@ -86,7 +86,7 @@
     <ClInclude Include="..\..\TP_JogoEstrategia\Libraries.h" />
     <ClInclude Include="..\..\TP_JogoEstrategia\Nave.h" />
     <ClInclude Include="..\..\TP_JogoEstrategia\Sala.h" />
-    <ClInclude Include="..\..\TP_JogoEstrategia\Tripulação.h" />
+    <ClInclude Include="..\..\TP_JogoEstrategia\Tripulacao.h" />
     <ClInclude Include="..\..\TP_JogoEstrategia\Unidades.h" />
     <ClInclude Include="..\..\TP_JogoEstrategia\Xenomorfos.h" />
   </ItemGroup>
@@ -98,7 +98,7 @@
     <ClCompile Include="..\..\TP_JogoEstrategia\main.cpp" />
     <ClCompile Include="..\..\TP_JogoEstrategia\Nave.cpp" />
     <ClCompile Include="..\..\TP_JogoEstrategia\Sala.cpp" />
-    <ClCompile Include="..\..\TP_JogoEstrategia\Tripulação.cpp" />
+    <ClCompile Include="..\..\TP_JogoEstrategia\Tripulacao.cpp" />
     <ClCompile Include="..\..\TP_JogoEstrategia\Unidades.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

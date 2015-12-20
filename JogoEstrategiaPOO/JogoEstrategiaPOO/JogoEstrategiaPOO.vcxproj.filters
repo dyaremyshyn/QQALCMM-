@@ -39,13 +39,13 @@
     <ClInclude Include="..\..\TP_JogoEstrategia\Sala.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\TP_JogoEstrategia\Tripulação.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\TP_JogoEstrategia\Unidades.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\TP_JogoEstrategia\Xenomorfos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TP_JogoEstrategia\Tripulacao.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -71,10 +71,10 @@
     <ClCompile Include="..\..\TP_JogoEstrategia\Sala.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\TP_JogoEstrategia\Tripulação.cpp">
+    <ClCompile Include="..\..\TP_JogoEstrategia\Unidades.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\TP_JogoEstrategia\Unidades.cpp">
+    <ClCompile Include="..\..\TP_JogoEstrategia\Tripulacao.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

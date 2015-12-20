@@ -1,15 +1,8 @@
-﻿Build started 20/12/2015 21:42:40.
+﻿Build started 20/12/2015 22:22:51.
      1>Project "C:\Users\Dmytro Yaremyshyn\Desktop\qqalcmm-\QQALCMM-\JogoEstrategiaPOO\JogoEstrategiaPOO\JogoEstrategiaPOO.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\TP_JogoEstrategia\Interecao.cpp ..\..\TP_JogoEstrategia\Jogo.cpp ..\..\TP_JogoEstrategia\Sala.cpp "..\..\TP_JogoEstrategia\Tripulação.cpp" ..\..\TP_JogoEstrategia\main.cpp
-         main.cpp
-         Tripulação.cpp
-         Sala.cpp
-         Jogo.cpp
-     1>c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\tp_jogoestrategia\jogo.cpp(18): warning C4018: '<' : signed/unsigned mismatch
-         Interecao.cpp
-     1>c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\tp_jogoestrategia\interecao.cpp(242): warning C4101: 'tecla' : unreferenced local variable
-         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\TP_JogoEstrategia\Tripulacao.cpp
+         Tripulacao.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Dmytro Yaremyshyn\Desktop\qqalcmm-\QQALCMM-\JogoEstrategiaPOO\Debug\JogoEstrategiaPOO.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Dmytro Yaremyshyn\Desktop\qqalcmm-\QQALCMM-\JogoEstrategiaPOO\Debug\JogoEstrategiaPOO.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Dmytro Yaremyshyn\Desktop\qqalcmm-\QQALCMM-\JogoEstrategiaPOO\Debug\JogoEstrategiaPOO.lib" /MACHINE:X86 Debug\Consola.obj
          Debug\Equipamentos.obj
@@ -18,11 +11,11 @@
          Debug\main.obj
          Debug\Nave.obj
          Debug\Sala.obj
-         "Debug\Tripulação.obj"
+         Debug\Tripulacao.obj
          Debug\Unidades.obj
          JogoEstrategiaPOO.vcxproj -> C:\Users\Dmytro Yaremyshyn\Desktop\qqalcmm-\QQALCMM-\JogoEstrategiaPOO\Debug\JogoEstrategiaPOO.exe
      1>Done Building Project "C:\Users\Dmytro Yaremyshyn\Desktop\qqalcmm-\QQALCMM-\JogoEstrategiaPOO\JogoEstrategiaPOO\JogoEstrategiaPOO.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:07.59
+Time Elapsed 00:00:01.25
