@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=MinGW-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/MinGW-Windows
-CND_ARTIFACT_NAME_Debug=tp_jogoestrategia
-CND_ARTIFACT_PATH_Debug=dist/Debug/MinGW-Windows/tp_jogoestrategia
+CND_ARTIFACT_NAME_Debug=jogoestrategiapoo
+CND_ARTIFACT_PATH_Debug=dist/Debug/MinGW-Windows/jogoestrategiapoo
 CND_PACKAGE_DIR_Debug=dist/Debug/MinGW-Windows/package
-CND_PACKAGE_NAME_Debug=tpjogoestrategia.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/MinGW-Windows/package/tpjogoestrategia.tar
+CND_PACKAGE_NAME_Debug=jogoestrategiapoo.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/MinGW-Windows/package/jogoestrategiapoo.tar
 # Release configuration
 CND_PLATFORM_Release=MinGW-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/MinGW-Windows
-CND_ARTIFACT_NAME_Release=tp_jogoestrategia
-CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/tp_jogoestrategia
+CND_ARTIFACT_NAME_Release=jogoestrategiapoo
+CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/jogoestrategiapoo
 CND_PACKAGE_DIR_Release=dist/Release/MinGW-Windows/package
-CND_PACKAGE_NAME_Release=tpjogoestrategia.tar
-CND_PACKAGE_PATH_Release=dist/Release/MinGW-Windows/package/tpjogoestrategia.tar
+CND_PACKAGE_NAME_Release=jogoestrategiapoo.tar
+CND_PACKAGE_PATH_Release=dist/Release/MinGW-Windows/package/jogoestrategiapoo.tar
 #
 # include compiler specific variables
 #
