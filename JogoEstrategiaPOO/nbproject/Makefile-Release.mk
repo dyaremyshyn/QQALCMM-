@@ -43,7 +43,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/_ext/335061274/Sala.o \
 	${OBJECTDIR}/_ext/335061274/Tripulação.o \
 	${OBJECTDIR}/_ext/335061274/Unidades.o \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/_ext/335061274/main.o
 
 
 # C Compiler Flags
@@ -110,10 +110,10 @@ ${OBJECTDIR}/_ext/335061274/Unidades.o: ../TP_JogoEstrategia/Unidades.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/Unidades.o ../TP_JogoEstrategia/Unidades.cpp
 
-${OBJECTDIR}/main.o: main.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/_ext/335061274/main.o: ../TP_JogoEstrategia/main.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/335061274
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/main.o ../TP_JogoEstrategia/main.cpp
 
 # Subprojects
 .build-subprojects:

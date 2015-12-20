@@ -43,7 +43,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/_ext/335061274/Sala.o \
 	${OBJECTDIR}/_ext/335061274/Tripulação.o \
 	${OBJECTDIR}/_ext/335061274/Unidades.o \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/_ext/335061274/main.o
 
 
 # C Compiler Flags
@@ -73,47 +73,47 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/jogoestrategiapoo.exe: ${OBJECTFILES}
 ${OBJECTDIR}/_ext/335061274/Consola.o: ../TP_JogoEstrategia/Consola.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/335061274
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/Consola.o ../TP_JogoEstrategia/Consola.cpp
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/Consola.o ../TP_JogoEstrategia/Consola.cpp
 
 ${OBJECTDIR}/_ext/335061274/Equipamentos.o: ../TP_JogoEstrategia/Equipamentos.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/335061274
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/Equipamentos.o ../TP_JogoEstrategia/Equipamentos.cpp
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/Equipamentos.o ../TP_JogoEstrategia/Equipamentos.cpp
 
 ${OBJECTDIR}/_ext/335061274/Interecao.o: ../TP_JogoEstrategia/Interecao.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/335061274
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/Interecao.o ../TP_JogoEstrategia/Interecao.cpp
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/Interecao.o ../TP_JogoEstrategia/Interecao.cpp
 
 ${OBJECTDIR}/_ext/335061274/Jogo.o: ../TP_JogoEstrategia/Jogo.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/335061274
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/Jogo.o ../TP_JogoEstrategia/Jogo.cpp
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/Jogo.o ../TP_JogoEstrategia/Jogo.cpp
 
 ${OBJECTDIR}/_ext/335061274/Nave.o: ../TP_JogoEstrategia/Nave.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/335061274
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/Nave.o ../TP_JogoEstrategia/Nave.cpp
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/Nave.o ../TP_JogoEstrategia/Nave.cpp
 
 ${OBJECTDIR}/_ext/335061274/Sala.o: ../TP_JogoEstrategia/Sala.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/335061274
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/Sala.o ../TP_JogoEstrategia/Sala.cpp
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/Sala.o ../TP_JogoEstrategia/Sala.cpp
 
 ${OBJECTDIR}/_ext/335061274/Tripulação.o: ../TP_JogoEstrategia/Tripulação.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/335061274
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/Tripulação.o ../TP_JogoEstrategia/Tripulação.cpp
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/Tripulação.o ../TP_JogoEstrategia/Tripulação.cpp
 
 ${OBJECTDIR}/_ext/335061274/Unidades.o: ../TP_JogoEstrategia/Unidades.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/335061274
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/Unidades.o ../TP_JogoEstrategia/Unidades.cpp
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/Unidades.o ../TP_JogoEstrategia/Unidades.cpp
 
-${OBJECTDIR}/main.o: main.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/_ext/335061274/main.o: ../TP_JogoEstrategia/main.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/335061274
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/335061274/main.o ../TP_JogoEstrategia/main.cpp
 
 # Subprojects
 .build-subprojects:

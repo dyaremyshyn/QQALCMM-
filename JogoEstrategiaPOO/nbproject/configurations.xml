@@ -31,7 +31,7 @@
       <itemPath>../TP_JogoEstrategia/Sala.cpp</itemPath>
       <itemPath>../TP_JogoEstrategia/Tripulação.cpp</itemPath>
       <itemPath>../TP_JogoEstrategia/Unidades.cpp</itemPath>
-      <itemPath>main.cpp</itemPath>
+      <itemPath>../TP_JogoEstrategia/main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -54,6 +54,9 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <ccTool>
+          <standard>8</standard>
+        </ccTool>
       </compileType>
       <item path="../TP_JogoEstrategia/Consola.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -102,7 +105,7 @@
       </item>
       <item path="../TP_JogoEstrategia/Xenomorfos.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="../TP_JogoEstrategia/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -172,7 +175,7 @@
       </item>
       <item path="../TP_JogoEstrategia/Xenomorfos.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="../TP_JogoEstrategia/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>
