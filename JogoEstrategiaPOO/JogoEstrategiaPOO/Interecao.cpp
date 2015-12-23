@@ -209,6 +209,7 @@ void Interacao::MostraAmbienteGrafico()
 	cout << "al -> Alojamentos do Capitão";
 	c.gotoxy(65, 12);
 	cout << "or -> Oficina Robótica";
+	
 
 	Novo_Jogo();
 
@@ -223,7 +224,7 @@ void Interacao::Novo_Jogo()
 {
 	string n;
 	
-	regex regex_pattern("^[1-9]?$");
+	regex regex_pattern("^[1-9]+$");
 	do
 	{
 		c.gotoxy(3, 35);
@@ -236,50 +237,115 @@ void Interacao::Novo_Jogo()
 	jogo = new Jogo(valor);
 }
 
-void Interacao::leComandos() {
-	c.gotoxy(6, 35);
-	string comando, cmd;
-	char tecla;
-	c.clrscr_comandline();
-	getline(cin, comando);
+void Interacao::Configurar_Nave() {
+	regex regex_pattern("[a-z][0-9]+");
+	Sala *pa = new Sala("Propulsor Adicional");
+	Sala *b = new Sala("Beliche");
+	Sala *rl = new Sala("Raio Laser");
+	Sala *ar = new Sala("Auto-Reparador");
+	Sala *ss = new Sala("Sistema Seguranca");
+	Sala *e = new Sala("Enfermaria");
+	Sala *sa = new Sala("Sala Armas");
+	Sala *ac = new Sala("Alojamento Capitao");
+	Sala *ofr = new Sala("Oficina Robotica");
+	while (1) {
+		c.gotoxy(65, 15);
+		cout << "Tripulantes disponiveis para mover: ";
+		jogo->TripulantesDisponiveis();
+		c.gotoxy(6, 35);
+		string comando, cmd;
+		c.clrscr_comandline();
+		getline(cin, comando);
 
-	if (comando == "") // Validação para tecla Enter
-		next();
-	else {
-		istringstream iss(comando);
-		iss >> cmd;
+		if (comando == "") // Validação para tecla Enter
+			next();
+		else {
+			istringstream iss(comando);
+			iss >> cmd;
 
-		//*******************************Comandos Relativos a configuração da nave************************************
-		if (cmd == "pa") {
-			sets_cmd(1);
+			//*******************************Comandos Relativos a configuração da nave************************************
+			if (cmd == "pa") {
+				jogo->AdicionaSala(pa);
+			}
+			if (cmd == "b") {
+				jogo->AdicionaSala(b);
+			}
+			if (cmd == "rl") {
+				jogo->AdicionaSala(rl);
+			}
+			if (cmd == "ar") {
+				jogo->AdicionaSala(ar);
+			}
+			if (cmd == "ss") {
+				jogo->AdicionaSala(ss);
+			}
+			if (cmd == "e") {
+				jogo->AdicionaSala(e);
+			}
+			if (cmd == "sa") {
+				jogo->AdicionaSala(sa);
+			}
+			if (cmd == "ac") {
+				jogo->AdicionaSala(ac);
+			}
+			if (cmd == "or") {
+				jogo->AdicionaSala(ofr);
+			}
+			if (regex_match(cmd, regex_pattern)) { //Mover tripulantes para salas, so aceita letra seguido de numero
+				jogo->Move(cmd);
+			}
+			if (cmd == "feito")
+			{
+				Jogar();
+			}
 		}
-		if (cmd == "b") {
-			sets_cmd(2);
-		}
-		if (cmd == "rl") {
-			sets_cmd(3);
-		}
-		if (cmd == "ar") {
-			sets_cmd(4);
-		}
-		if (cmd == "ss") {
-			sets_cmd(5);
-		}
-		if (cmd == "e") {
-			sets_cmd(6);
-		}
-		if (cmd == "sa") {
-			sets_cmd(7);
-		}
-		if (cmd == "ac") {
-			sets_cmd(8);
-		}
-		if (cmd == "or") {
-			sets_cmd(9);
-		}
+
 	}
 }
 
-void Interacao::sets_cmd(int tipo) {
-	jogo->AdicionaSala(tipo);
+void Interacao::Jogar()
+{
+
+	while (1) { //Ler comandos quando estamos a jogar
+		c.gotoxy(6, 35);
+		string comando, cmd;
+		c.clrscr_comandline();
+		getline(cin, comando);
+
+		//if (comando == "") // Validação para tecla Enter
+		//	next();
+		//else {
+		//	istringstream iss(comando);
+		//	iss >> cmd;
+
+		//	//*******************************Comandos Relativos a configuração da nave************************************
+		//	if (cmd == "pa") {
+		//		jogo->AdicionaSala(pa);
+		//	}
+		//	if (cmd == "b") {
+		//		jogo->AdicionaSala(b);
+		//	}
+		//	if (cmd == "rl") {
+		//		jogo->AdicionaSala(rl);
+		//	}
+		//	if (cmd == "ar") {
+		//		jogo->AdicionaSala(ar);
+		//	}
+		//	if (cmd == "ss") {
+		//		jogo->AdicionaSala(ss);
+		//	}
+		//	if (cmd == "e") {
+		//		jogo->AdicionaSala(e);
+		//	}
+		//	if (cmd == "sa") {
+		//		jogo->AdicionaSala(sa);
+		//	}
+		//	if (cmd == "ac") {
+		//		jogo->AdicionaSala(ac);
+		//	}
+		//	if (cmd == "or") {
+		//		jogo->AdicionaSala(ofr);
+		//	}
+		//}
+		}
 }

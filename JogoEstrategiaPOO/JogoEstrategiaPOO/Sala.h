@@ -9,11 +9,11 @@ using namespace std;
 class Sala{
 private:
     string nome;
-    int saude;
     int oxigenio;
 	int integridade;
 public:
 	int reparasala();
+	int getintegridade() const;
 	string getnome() const;
 	Sala(string n);
 	~Sala();

@@ -12,9 +12,8 @@ int main(int argc, char** argv) {
 	Interacao control;
 	control.Entrada();
 	control.MostraAmbienteGrafico();
-	while (1) {
-		control.leComandos();
-	}
+	control.Configurar_Nave();
+	control.Jogar();
 }
     
 

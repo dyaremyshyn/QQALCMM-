@@ -14,14 +14,21 @@ using namespace std;
 class Jogo{
 	Consola c;
     int dificuldade;
+	int percurso;
+	bool fim;
+	int fim_jogo;
 	vector<Sala*> salas; //O jogador equipa a nave com diferentes salas
-	vector<Equipamento*> equipamentos; //O jogador equipa a nava com diferentes equipamentos
-	vector<Tripulante*> tripulantes; //O jogador equipa a nava com diferentes tripulantes
+	vector<Tripulante*> tripulantes; //O jogador equipa a nave com diferentes tripulantes
 public:
     Jogo(int d);
     ~Jogo();
-	void AdicionaSala(int tipo);
+	void AdicionaSala(Sala *s);
 	void DesenhaSala(int i, string n);
+	void DesenhaTripulante(string e, int p);
+	void Move(string cmd);
+	void turno();
+	void TripulantesDisponiveis();
+	
 };
 
 

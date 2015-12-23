@@ -12,7 +12,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Consola.cpp" />
-    <ClCompile Include="Equipamentos.cpp" />
     <ClCompile Include="Interecao.cpp" />
     <ClCompile Include="Jogo.cpp" />
     <ClCompile Include="main.cpp" />
@@ -23,7 +22,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Consola.h" />
-    <ClInclude Include="Equipamentos.h" />
     <ClInclude Include="Inimigos.h" />
     <ClInclude Include="Interacao.h" />
     <ClInclude Include="Jogo.h" />

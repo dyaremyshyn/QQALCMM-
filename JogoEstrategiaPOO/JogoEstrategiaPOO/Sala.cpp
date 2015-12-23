@@ -4,9 +4,13 @@ Sala::Sala(string n)
 	nome = n;
 	integridade = 100;
 	oxigenio = 100;
-	saude = 100;
 }
 Sala::~Sala() {}
+
+int Sala::getintegridade() const
+{
+	return integridade;
+}
 
 string Sala::getnome() const
 {

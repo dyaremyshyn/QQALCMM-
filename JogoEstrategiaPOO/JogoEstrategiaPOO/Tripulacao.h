@@ -3,26 +3,30 @@
 #include "Libraries.h"
 class Sala;
 
+
 class Tripulante
 {
-	/*
-	Sala posicao;
-	string nome;
-	string comando;
-	*/
+	int vida;
+//	Sala posicao;
+//	string nome;
+//	string comando;
 	   
 public:
 	Tripulante();
 	~Tripulante();
-	/*
+	
+//	string getNome();
+//	void setNome(string n);
+
+//	int getPosicao();
+	//void setPosicao();
+	Sala * getOndeEstou();
+	void setOndeEstou(Sala *a);
 	string getNome();
-	void setNome(string n);
-
-	int getPosicao();
-	void setPosicao();
-	*/
 private:
-
+	static char contador;
+	string nome;
+	Sala * ondeEstou;
 };
 
 

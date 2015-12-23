@@ -7,11 +7,11 @@ class Interacao
 public:
 	Interacao();
 	void Entrada(); //Função só para ficar com um aspeto grafico inicial mais bonito
-	void leComandos(); //Função para ler comandos inseridos pelo utilizador
+	void Configurar_Nave(); //Função para ler comandos inseridos pelo utilizador
 	void MostraAmbienteGrafico(); //Mostrar nave
 	void next() { }
-	void sets_cmd(int s);
 	void Novo_Jogo();
+	void Jogar();
 private:
 	Jogo *jogo; //Ponteiro para poder aceder a classe jogo
 	bool jogo_criado;

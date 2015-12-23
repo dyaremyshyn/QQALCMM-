@@ -2,6 +2,7 @@
 
 Jogo::Jogo(int d){
 	dificuldade = d;
+	fim = 4000 + 1000 * d;
 	salas.resize(12);
 	salas.at(0) = new Sala("Propulsor");
 	salas.at(4) = new Sala("Sala Maquinas");
@@ -9,76 +10,27 @@ Jogo::Jogo(int d){
 	salas.at(6) = new Sala("Controlo Escudo");
 	salas.at(7) = new Sala("Ponte");
 	salas.at(8) = new Sala("Propulsor");
+	tripulantes.push_back(new Tripulante());
+	tripulantes.push_back(new Tripulante());
+	tripulantes.push_back(new Tripulante());
 }
 Jogo::~Jogo(){}
-
-
-void Jogo::AdicionaSala(int tipo)
+void Jogo::AdicionaSala(Sala *s)
 {
 	for (int i = 0; i < salas.size(); i++) {
-		if (tipo == 1) {
-				if (salas[i] == NULL) {
-					salas.at(i) = new Sala("Propulsor Adicional"); //Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
-					DesenhaSala(i, salas[i]->getnome());
-					break;
-				}
-		}
-		if (tipo == 2) {
-				if (salas[i] == NULL) {
-					salas.at(i) = new Sala("Beliche"); //Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
-					DesenhaSala(i, salas[i]->getnome());
-					break;
-				}
-		}
-		if (tipo == 3) {
-				if (salas[i] == NULL) {
-					salas.at(i) = new Sala("Raio Laser"); //Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
-					DesenhaSala(i, salas[i]->getnome());
-					break;
-				}
-		}
-		if (tipo == 4) {
-				if (salas[i] == NULL) {
-					salas.at(i) = new Sala("Auto-reparador"); //Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
-					DesenhaSala(i, salas[i]->getnome());
-					break;
-				}
-		}
-		if (tipo == 5) {
-				if (salas[i] == NULL) {
-					salas.at(i) = new Sala("Sistema Seguranca"); //Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
-					DesenhaSala(i, salas[i]->getnome());
-					break;
-				}
-		}
-		if (tipo == 6) {
-				if (salas[i] == NULL) {
-					salas.at(i) = new Sala("Enfermaria"); //Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
-					DesenhaSala(i, salas[i]->getnome());
-					break;
-				}
-		}
-		if (tipo == 7) {
-				if (salas[i] == NULL) {
-					salas.at(i) = new Sala("Sala Armas"); //Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
-					DesenhaSala(i, salas[i]->getnome());
-					break;
-				}
-		}
-		if (tipo == 8) {
-				if (salas[i] == NULL) {
-					salas.at(i) = new Sala("Alojamentos Capitao"); //Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
-					DesenhaSala(i, salas[i]->getnome());
-					break;
-				}
-		}
-		if (tipo == 9) {
-				if (salas[i] == NULL) {
-					salas.at(i) = new Sala("Oficina Robotica"); //Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
-					DesenhaSala(i, salas[i]->getnome());
-					break;
-				}
-		}
+		//if (salas[i]->getnome() == "Alojamento Capitao")          //So pode existir uma sala para alijar o capitao
+		//	{	
+		//		cout << "Ja existe uma sala para alojar o capitao";
+		//		break;
+		//	}
+		if (salas[i] == NULL) 
+			{          //Adiciona sala caso ainda haja espaço no vetor de salas que existe na nave
+				salas.at(i) = s;			//Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
+				if (s->getnome() == "Beliche")
+					tripulantes.push_back(new Tripulante());
+				DesenhaSala(i, salas[i]->getnome());
+				break;
+			}
 		if (salas[11] != NULL)
 		{
 			cout << "Nao pode adicionar mais";
@@ -180,4 +132,137 @@ void Jogo::DesenhaSala(int i, string n) {
 			cout << n;
 	}
 
+}
+
+void Jogo::Move(string cmd)
+{
+	string e;
+		int p;
+	e = cmd.substr(0, 1); //elemento tripulante "e" fica com a primeira parte da string
+	p = stoi(cmd.substr(1, 99999)); //posição "p" fica com a segunda parte da string
+	if (p > 12)
+	{
+		c.gotoxy(6, 35);
+		cout << "Sala invalida!";
+	}
+		
+
+	for (unsigned int i = 0; i < tripulantes.size(); i++)
+	{
+		if (salas[p-1]!=NULL &&  tripulantes[i]->getNome() == e && tripulantes[i]->getOndeEstou()==NULL) //Verificar se existe uma sala criada e se a unidade ja nao esta noutra sala
+		{
+			tripulantes[i]->setOndeEstou(salas[p-1]) ; //Vai para a sala indicada menos 1, pois o vector começa no 0
+			DesenhaTripulante(e, p);
+			break;
+		}
+	}
+}
+
+void Jogo::DesenhaTripulante(string e, int p)
+{
+	if (p == 1) //Primeira sala
+	{
+		c.gotoxy(6, 6);
+		cout << e;
+		
+	}
+	if (p == 2) //Segunda sala 
+	{
+		c.gotoxy(16, 6);
+		cout << e;
+	}
+	if (p == 3) //Terceira sala 
+	{
+		c.gotoxy(26, 6);
+		cout << e;
+	}
+	if (p == 4) //Quarta sala
+	{
+		c.gotoxy(36, 6);
+		cout << e;
+	}
+	if (p == 5) 
+	{
+		c.gotoxy(16, 16);
+		cout << e;
+	}
+	if (p == 6) 
+	{
+		c.gotoxy(26, 16);
+		cout << e;
+	}
+	if (p == 7)
+	{
+		c.gotoxy(36, 16);
+		cout << e;
+	}
+	if (p == 8) 
+	{
+		c.gotoxy(46, 16);
+		cout << e;
+	}
+	if (p == 9)
+	{
+		c.gotoxy(6, 24);
+		cout << e;
+	}
+	if (p == 10)
+	{
+		c.gotoxy(16, 24);
+		cout << e;
+	}
+	if (p == 11) 
+	{
+		c.gotoxy(26, 24);
+		cout << e;
+	}
+	if (p == 12)
+	{
+		c.gotoxy(36, 24);
+		cout << e;
+	}
+}
+
+void Jogo::turno()
+{
+	int propulsao=0;
+	for (unsigned int i = 0; i < tripulantes.size(); i++) //Percorrer o vector de tripulantes
+	{
+		if (tripulantes[i]->getOndeEstou() == salas[7]) //Algum tripulante está a operar a ponte, a nave pode progredir
+		{
+			for (unsigned int i = 0; i < salas.size(); i++) //Verificar quantos propulsores a nave tem, a potencia da nave para deslocar-se é diretamente proporcional aos propulsores instalados
+			{
+				if (salas[i]->getnome() == "Propulsor" || salas[i]->getnome() == "Propulsor Adicional")
+				{
+					propulsao += salas[i]->getintegridade(); 
+				}
+				if (salas[4]->getintegridade() == 100  /*salas[7]->getestado()==true*/) //Sala de maquinas, se estiver em bom estado, a nave anda
+					percurso = percurso + propulsao;
+				c.gotoxy(65, 3);
+				cout << "Ja percorreu: " << percurso;
+			}
+		}
+		else {
+			cout << "Ninguem esta a operar a ponte, nao pode avancar!";
+			break;
+		}
+	}
+
+	for (unsigned int i = 0; i < salas.size(); i++) //Verificar se beliches da nave estao destruidos, caso positivo, chegou ao fim do jogo
+	{
+		if (salas[i]->getnome() == "Beliche" && salas[i]->getintegridade() <= 0)
+			fim_jogo = true;
+	}
+
+}
+
+void Jogo::TripulantesDisponiveis()
+{
+	int j=16;
+	for (unsigned int i = 0; i < tripulantes.size(); i++)
+	{
+		c.gotoxy(65, j);
+		cout << tripulantes[i]->getNome();
+		j++;
+	}
 }

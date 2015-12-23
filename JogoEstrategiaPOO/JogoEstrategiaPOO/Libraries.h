@@ -15,5 +15,5 @@
 #include <regex>
 
 #include "Consola.h"
-
+using namespace std;
 #endif
