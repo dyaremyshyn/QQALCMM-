@@ -311,7 +311,9 @@ void Interacao::Jogar()
 		string comando, cmd;
 		c.clrscr_comandline();
 		getline(cin, comando);
-
+		
+		jogo->turno();
+		
 		//if (comando == "") // Validação para tecla Enter
 		//	next();
 		//else {

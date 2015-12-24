@@ -14,6 +14,7 @@ int main(int argc, char** argv) {
 	control.MostraAmbienteGrafico();
 	control.Configurar_Nave();
 	control.Jogar();
+
 }
     
 

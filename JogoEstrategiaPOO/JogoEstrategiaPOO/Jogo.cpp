@@ -14,7 +14,9 @@ Jogo::Jogo(int d){
 	tripulantes.push_back(new Tripulante());
 	tripulantes.push_back(new Tripulante());
 }
+
 Jogo::~Jogo(){}
+
 void Jogo::AdicionaSala(Sala *s)
 {
 	for (int i = 0; i < salas.size(); i++) {
@@ -227,6 +229,7 @@ void Jogo::DesenhaTripulante(string e, int p)
 void Jogo::turno()
 {
 	int propulsao=0;
+
 	for (unsigned int i = 0; i < tripulantes.size(); i++) //Percorrer o vector de tripulantes
 	{
 		if (tripulantes[i]->getOndeEstou() == salas[7]) //Algum tripulante está a operar a ponte, a nave pode progredir
