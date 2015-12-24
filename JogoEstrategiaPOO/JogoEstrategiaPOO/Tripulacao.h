@@ -1,6 +1,7 @@
 #ifndef TRIPULANTE_H
 #define	TRIPULANTE_H
 #include "Libraries.h"
+#include "Sala.h"
 class Sala;
 
 
@@ -23,6 +24,8 @@ public:
 	Sala * getOndeEstou();
 	void setOndeEstou(Sala *a);
 	string getNome();
+
+	void reparaDanos(Sala *a);
 private:
 	static char contador;
 	string nome;

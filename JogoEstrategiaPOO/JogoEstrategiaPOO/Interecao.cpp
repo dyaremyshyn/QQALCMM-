@@ -206,7 +206,7 @@ void Interacao::MostraAmbienteGrafico()
 	c.gotoxy(65, 10);
 	cout << "sa -> Sala de Armas";
 	c.gotoxy(65, 11);
-	cout << "al -> Alojamentos do Capitão";
+	cout << "ac -> Alojamentos do Capitão";
 	c.gotoxy(65, 12);
 	cout << "or -> Oficina Robótica";
 	

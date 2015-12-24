@@ -1,4 +1,5 @@
 #include "Tripulacao.h"
+
 char Tripulante::contador = 'a';
 
 Tripulante::Tripulante()
@@ -7,6 +8,8 @@ Tripulante::Tripulante()
 	contador++;
 	vida = 100;
 }
+
+Tripulante::~Tripulante() {}
 
 string Tripulante::getNome()
 {
@@ -20,4 +23,9 @@ void Tripulante::setOndeEstou(Sala *s)
 Sala * Tripulante::getOndeEstou()
 {
 	return ondeEstou;
+}
+
+void Tripulante::reparaDanos(Sala *a) {
+	if (a -> getintegridade() < 100)
+		a->reparSala(1);
 }

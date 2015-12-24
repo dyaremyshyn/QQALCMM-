@@ -1,4 +1,6 @@
 #include "Sala.h"
+class Tripulante;
+
 Sala::Sala(string n)
 {
 	nome = n;
@@ -6,6 +8,11 @@ Sala::Sala(string n)
 	oxigenio = 100;
 }
 Sala::~Sala() {}
+
+void Sala::reparSala(int vida) {
+	integridade += vida;
+}
+
 
 int Sala::getintegridade() const
 {
@@ -16,3 +23,9 @@ string Sala::getnome() const
 {
 	return nome;
 }
+
+void Sala::setIntegridade(int valor) 
+{
+	integridade = valor;
+}
+

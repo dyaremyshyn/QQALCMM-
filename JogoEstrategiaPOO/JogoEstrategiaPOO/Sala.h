@@ -3,7 +3,6 @@
 
 #include "Tripulacao.h"
 
-
 using namespace std;
 
 class Sala{
@@ -12,12 +11,12 @@ private:
     int oxigenio;
 	int integridade;
 public:
-	int reparasala();
+	void reparSala(int vida);
 	int getintegridade() const;
 	string getnome() const;
 	Sala(string n);
 	~Sala();
-
+	void setIntegridade(int vida);
 	
 };
 

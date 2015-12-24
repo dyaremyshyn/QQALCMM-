@@ -14,15 +14,17 @@ class Tripulante;
 using namespace std;
 
 class Nave{
-    string nome;
+    const string nome;
     vector<Sala*> salas; //O jogador equipa a nava com diferentes salas
 	vector<Equipamento*> equipamentos; //O jogador equipa a nava com diferentes equipamentos
 	vector<Tripulante*> tripulantes; //O jogador equipa a nava com diferentes tripulantes
 	
 public:
-    Nave(string n);
+    Nave(const string n);
     ~Nave();
     
+	bool guiaNave(Tripulante *a);
+
 private:
     
 };

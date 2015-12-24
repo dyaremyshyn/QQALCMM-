@@ -137,7 +137,8 @@ void Jogo::DesenhaSala(int i, string n) {
 void Jogo::Move(string cmd)
 {
 	string e;
-		int p;
+	int p;
+
 	e = cmd.substr(0, 1); //elemento tripulante "e" fica com a primeira parte da string
 	p = stoi(cmd.substr(1, 99999)); //posição "p" fica com a segunda parte da string
 	if (p > 12)
