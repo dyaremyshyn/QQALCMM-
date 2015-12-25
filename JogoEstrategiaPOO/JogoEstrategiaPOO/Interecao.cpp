@@ -117,7 +117,7 @@ void Interacao::MostraAmbienteGrafico()
 	c.gotoxy(5, 4);
 	for (int i = 0; i < 40; i++)		//Primeira Linha
 		cout << char(178);				//Desenha linha
-	c.gotoxy(5, 12);						//Posição da linha seguinte
+	c.gotoxy(5, 12);				    //Posição da linha seguinte
 	for (int i = 0; i < 50; i++)		//Segunda Linha
 		cout << char(178);
 	
@@ -131,7 +131,7 @@ void Interacao::MostraAmbienteGrafico()
 
 	for (int i = 5; i < 48; i = i + 10) //Ciclo para desenhar colunas da primeira linha da nave
 	{
-		for (int j = 4; j < 13; j++) //Cada espaçamente entre as linhas tem 8 caracteres
+		for (int j = 4; j < 13; j++)    //Cada espaçamente entre as linhas tem 8 caracteres
 		{
 			c.gotoxy(i, j);
 			cout << char(178);
@@ -263,7 +263,8 @@ void Interacao::Configurar_Nave() {
 			istringstream iss(comando);
 			iss >> cmd;
 
-			//*******************************Comandos Relativos a configuração da nave************************************
+			//******************************* Comandos Relativos a Configuração da Nave ************************************
+
 			if (cmd == "pa") {
 				jogo->AdicionaSala(pa);
 			}
@@ -305,8 +306,12 @@ void Interacao::Configurar_Nave() {
 
 void Interacao::Jogar()
 {
+	cout << "      Vamos comecar a nossa viagem!" << endl;
+
+	limpaParteDireita(); // vou melhorar esta função, é para limpar a parte direita do ecrã, correspondente aos comandos de configuração da nave
 
 	while (1) { //Ler comandos quando estamos a jogar
+		
 		c.gotoxy(6, 35);
 		string comando, cmd;
 		c.clrscr_comandline();
@@ -350,4 +355,16 @@ void Interacao::Jogar()
 		//	}
 		//}
 		}
+}
+
+void Interacao::limpaParteDireita()
+{
+	c.gotoxy(80, 2);
+	cout << "                            ";
+	for (int i = 65; i < 66; i++) {
+		for (int j = 3; j < 20; j++) {
+			c.gotoxy(i, j);
+			cout << "                                     ";
+		}
+	}
 }

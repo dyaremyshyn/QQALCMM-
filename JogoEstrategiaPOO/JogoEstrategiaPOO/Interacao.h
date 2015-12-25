@@ -15,5 +15,6 @@ public:
 private:
 	Jogo *jogo; //Ponteiro para poder aceder a classe jogo
 	bool jogo_criado;
+	void limpaParteDireita();
 };
 

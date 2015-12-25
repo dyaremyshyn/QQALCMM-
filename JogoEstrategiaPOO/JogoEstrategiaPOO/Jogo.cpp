@@ -140,25 +140,26 @@ void Jogo::Move(string cmd)
 {
 	string e;
 	int p;
-
-	e = cmd.substr(0, 1); //elemento tripulante "e" fica com a primeira parte da string
-	p = stoi(cmd.substr(1, 99999)); //posição "p" fica com a segunda parte da string
-	if (p > 12)
-	{
-		c.gotoxy(6, 35);
-		cout << "Sala invalida!";
-	}
+	//do{
+		e = cmd.substr(0, 1); //elemento tripulante "e" fica com a primeira parte da string
+		p = stoi(cmd.substr(1, 99999)); //posição "p" fica com a segunda parte da string
+		if (p > 12)
+		{
+			c.gotoxy(6, 35);
+			cout << "Sala invalida!";
+		}
 		
 
-	for (unsigned int i = 0; i < tripulantes.size(); i++)
-	{
-		if (salas[p-1]!=NULL &&  tripulantes[i]->getNome() == e && tripulantes[i]->getOndeEstou()==NULL) //Verificar se existe uma sala criada e se a unidade ja nao esta noutra sala
+		for (unsigned int i = 0; i < tripulantes.size(); i++)
 		{
-			tripulantes[i]->setOndeEstou(salas[p-1]) ; //Vai para a sala indicada menos 1, pois o vector começa no 0
-			DesenhaTripulante(e, p);
-			break;
+			if (salas[p-1]!=NULL &&  tripulantes[i]->getNome() == e && tripulantes[i]->getOndeEstou()==NULL) //Verificar se existe uma sala criada e se a unidade ja nao esta noutra sala
+			{
+				tripulantes[i]->setOndeEstou(salas[p-1]) ; //Vai para a sala indicada menos 1, pois o vector começa no 0
+				DesenhaTripulante(e, p);
+				break;
+			}
 		}
-	}
+	//} while (cmd!="feito");
 }
 
 void Jogo::DesenhaTripulante(string e, int p)
@@ -226,7 +227,7 @@ void Jogo::DesenhaTripulante(string e, int p)
 	}
 }
 
-void Jogo::turno()
+void Jogo::turno()   // 
 {
 	int propulsao=0;
 
