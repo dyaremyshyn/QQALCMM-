@@ -233,7 +233,7 @@ void Jogo::turno()   //
 
 	for (unsigned int i = 0; i < tripulantes.size(); i++) //Percorrer o vector de tripulantes
 	{
-		if (tripulantes[i]->getOndeEstou() == salas[7]) //Algum tripulante está a operar a ponte, a nave pode progredir
+		if (tripulantes[i]->estouPonte(tripulantes[i]->getOndeEstou()) == true) //Algum tripulante está a operar a ponte, a nave pode progredir
 		{
 			for (unsigned int i = 0; i < salas.size(); i++) //Verificar quantos propulsores a nave tem, a potencia da nave para deslocar-se é diretamente proporcional aos propulsores instalados
 			{

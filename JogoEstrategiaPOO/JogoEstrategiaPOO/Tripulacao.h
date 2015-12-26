@@ -22,10 +22,11 @@ public:
 //	int getPosicao();
 	//void setPosicao();
 	Sala * getOndeEstou();
-	void setOndeEstou(Sala *a);
+	void setOndeEstou(Sala *s);
 	string getNome();
 
 	void reparaDanos(Sala *a);
+	bool estouPonte(Sala *s);
 private:
 	static char contador;
 	string nome;

@@ -1,6 +1,10 @@
-﻿  Jogo.cpp
+﻿  Tripulacao.cpp
+  Jogo.cpp
 c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(5): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
 c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(22): warning C4018: '<': signed/unsigned mismatch
-  Interecao.cpp
   Generating Code...
+  Skipping... (no relevant changes detected)
+  main.cpp
+  Sala.cpp
+  Interecao.cpp
   JogoEstrategiaPOO.vcxproj -> C:\Users\Dmytro Yaremyshyn\Desktop\qqalcmm-\QQALCMM-\JogoEstrategiaPOO\Debug\JogoEstrategiaPOO.exe
