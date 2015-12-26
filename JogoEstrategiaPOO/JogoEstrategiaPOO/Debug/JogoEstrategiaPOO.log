@@ -1,10 +1,17 @@
-﻿  Tripulacao.cpp
-  Jogo.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(5): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(22): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  main.cpp
-  Sala.cpp
-  Interecao.cpp
-  JogoEstrategiaPOO.vcxproj -> C:\Users\Dmytro Yaremyshyn\Desktop\qqalcmm-\QQALCMM-\JogoEstrategiaPOO\Debug\JogoEstrategiaPOO.exe
+﻿Build started 26/12/2015 19:35:27.
+     1>Project "C:\Users\Pedro Camacho\Documents\GitHub\QQALCMM-\JogoEstrategiaPOO\JogoEstrategiaPOO\JogoEstrategiaPOO.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Pedro Camacho\Documents\GitHub\QQALCMM-\JogoEstrategiaPOO\Debug\JogoEstrategiaPOO.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Pedro Camacho\Documents\GitHub\QQALCMM-\JogoEstrategiaPOO\Debug\JogoEstrategiaPOO.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Pedro Camacho\Documents\GitHub\QQALCMM-\JogoEstrategiaPOO\Debug\JogoEstrategiaPOO.lib" /MACHINE:X86 Debug\Consola.obj
+         Debug\Interecao.obj
+         Debug\Jogo.obj
+         Debug\main.obj
+         Debug\Nave.obj
+         Debug\Sala.obj
+         Debug\Tripulacao.obj
+         Debug\Unidades.obj
+         JogoEstrategiaPOO.vcxproj -> C:\Users\Pedro Camacho\Documents\GitHub\QQALCMM-\JogoEstrategiaPOO\Debug\JogoEstrategiaPOO.exe
+     1>Done Building Project "C:\Users\Pedro Camacho\Documents\GitHub\QQALCMM-\JogoEstrategiaPOO\JogoEstrategiaPOO\JogoEstrategiaPOO.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.43

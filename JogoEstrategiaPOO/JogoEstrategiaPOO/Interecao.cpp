@@ -306,55 +306,27 @@ void Interacao::Configurar_Nave() {
 
 void Interacao::Jogar()
 {
-	cout << "      Vamos comecar a nossa viagem!" << endl;
-
-	limpaParteDireita(); // vou melhorar esta função, é para limpar a parte direita do ecrã, correspondente aos comandos de configuração da nave
-
+	limpaParteDireita();
+	
 	while (1) { //Ler comandos quando estamos a jogar
-		
+		regex regex_pattern("[a-z][0-9]+");
 		c.gotoxy(6, 35);
 		string comando, cmd;
 		c.clrscr_comandline();
 		getline(cin, comando);
-		
-		jogo->turno();
-		
-		//if (comando == "") // Validação para tecla Enter
-		//	next();
-		//else {
-		//	istringstream iss(comando);
-		//	iss >> cmd;
+		if (comando == "") // Validação para tecla Enter
+			jogo->turno(); //O utilizador não quer alterar nada, e avança no turno
+		else {
+			istringstream iss(comando);
+			iss >> cmd;
 
-		//	//*******************************Comandos Relativos a configuração da nave************************************
-		//	if (cmd == "pa") {
-		//		jogo->AdicionaSala(pa);
-		//	}
-		//	if (cmd == "b") {
-		//		jogo->AdicionaSala(b);
-		//	}
-		//	if (cmd == "rl") {
-		//		jogo->AdicionaSala(rl);
-		//	}
-		//	if (cmd == "ar") {
-		//		jogo->AdicionaSala(ar);
-		//	}
-		//	if (cmd == "ss") {
-		//		jogo->AdicionaSala(ss);
-		//	}
-		//	if (cmd == "e") {
-		//		jogo->AdicionaSala(e);
-		//	}
-		//	if (cmd == "sa") {
-		//		jogo->AdicionaSala(sa);
-		//	}
-		//	if (cmd == "ac") {
-		//		jogo->AdicionaSala(ac);
-		//	}
-		//	if (cmd == "or") {
-		//		jogo->AdicionaSala(ofr);
-		//	}
-		//}
+			//*******************************Comandos Relativos a controlo dos tripulantes************************************
+			if (regex_match(cmd, regex_pattern)) { //Mover tripulantes para salas, so aceita letra seguido de numero
+				jogo->Move(cmd);
+				jogo->turno(); //Depois de tomada a acção do utilizador, avança nos turnos
+			}
 		}
+	}
 }
 
 void Interacao::limpaParteDireita()

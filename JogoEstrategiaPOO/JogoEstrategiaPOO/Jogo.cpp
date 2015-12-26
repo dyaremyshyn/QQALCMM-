@@ -241,23 +241,20 @@ void Jogo::turno()   //
 				{
 					propulsao += salas[i]->getintegridade(); 
 				}
-				if (salas[4]->getintegridade() == 100  /*salas[7]->getestado()==true*/) //Sala de maquinas, se estiver em bom estado, a nave anda
-					percurso = percurso + propulsao;
-				c.gotoxy(65, 3);
-				cout << "Ja percorreu: " << percurso;
+				//if (salas[4]->getintegridade() == 100  /*salas[7]->getestado()==true*/) //Sala de maquinas, se estiver em bom estado, a nave anda
+					
+				
 			}
 		}
-		else {
-			cout << "Ninguem esta a operar a ponte, nao pode avancar!";
-			break;
-		}
 	}
-
-	for (unsigned int i = 0; i < salas.size(); i++) //Verificar se beliches da nave estao destruidos, caso positivo, chegou ao fim do jogo
-	{
-		if (salas[i]->getnome() == "Beliche" && salas[i]->getintegridade() <= 0)
-			fim_jogo = true;
-	}
+	percurso = percurso + propulsao;
+	c.gotoxy(65, 3);
+	cout << "Ja percorreu: " << percurso;
+	//for (unsigned int i = 0; i < salas.size(); i++) //Verificar se beliches da nave estao destruidos, caso positivo, chegou ao fim do jogo
+	//{
+	//	if (salas[i]->getnome() == "Beliche" && salas[i]->getintegridade() <= 0)
+	//		fim_jogo = true;
+	//}
 
 }
 
