@@ -257,7 +257,7 @@ void Interacao::Configurar_Nave() {
 		c.clrscr_comandline();
 		getline(cin, comando);
 
-		if (comando == "") // Validação para tecla Enter
+		if (comando == "" || comando == " ") // Validação para tecla Enter
 			next();
 		else {
 			istringstream iss(comando);
@@ -314,8 +314,12 @@ void Interacao::Jogar()
 		string comando, cmd;
 		c.clrscr_comandline();
 		getline(cin, comando);
-		if (comando == "") // Validação para tecla Enter
+		if (comando == " ") { // Validação para tecla Enter
+			cout << "CHEGUEI AQUI!!!!!!!!!!!!!!!!!!!";
 			jogo->turno(); //O utilizador não quer alterar nada, e avança no turno
+			cout << "CHEGUEI AQUI";
+			next();
+		}
 		else {
 			istringstream iss(comando);
 			iss >> cmd;
@@ -324,6 +328,7 @@ void Interacao::Jogar()
 			if (regex_match(cmd, regex_pattern)) { //Mover tripulantes para salas, so aceita letra seguido de numero
 				jogo->Move(cmd);
 				jogo->turno(); //Depois de tomada a acção do utilizador, avança nos turnos
+				next();
 			}
 		}
 	}

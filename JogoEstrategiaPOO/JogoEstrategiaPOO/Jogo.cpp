@@ -227,7 +227,7 @@ void Jogo::DesenhaTripulante(string e, int p)
 	}
 }
 
-void Jogo::turno()   // 
+void Jogo::turno()   
 {
 	int propulsao=0;
 
@@ -245,11 +245,16 @@ void Jogo::turno()   //
 					
 				
 			}
+			percurso = percurso + propulsao;
+			c.gotoxy(65, 3);
+			cout << "Ja percorreu: " << percurso;
 		}
 	}
-	percurso = percurso + propulsao;
-	c.gotoxy(65, 3);
-	cout << "Ja percorreu: " << percurso;
+	if (percurso == 0) {
+		c.gotoxy(65, 3);
+		cout << "Ninguem esta a operar a Ponte" << endl;
+	}
+	
 	//for (unsigned int i = 0; i < salas.size(); i++) //Verificar se beliches da nave estao destruidos, caso positivo, chegou ao fim do jogo
 	//{
 	//	if (salas[i]->getnome() == "Beliche" && salas[i]->getintegridade() <= 0)
