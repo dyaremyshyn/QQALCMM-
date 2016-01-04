@@ -18,7 +18,10 @@ Jogo::Jogo(int d){
 	tripulantes.push_back(new Tripulante());
 }
 
-Jogo::~Jogo(){}
+Jogo::~Jogo(){
+	for (int i = 0; i < eventos.size(); i++)
+		delete eventos[i];
+}
 
 void Jogo::AdicionaSala(Sala *s)
 {
@@ -312,6 +315,26 @@ void Jogo::sorteiaEvento() {
 }
 */
 
+vector<Sala*> Jogo::getSalas() {
+	return salas;
+}
+
+/*
 void Jogo::danificarSala(Sala *s) {
-	s->alteraIntegridade(10);
+	s->recebeDano(10);
+}*/
+
+void Jogo::addEvento(Evento *e) {
+	eventos.push_back(e);
+}
+bool Jogo::sorteiaEvento() {
+	srand(time(NULL));
+	int r = rand() % 100 + 1;
+	if (r > 70)
+		return true;
+	return false;
+}
+
+vector<Evento*> Jogo::getEventos() {
+	return eventos;
 }

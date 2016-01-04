@@ -10,7 +10,7 @@ public:
 	void next() { }
 	void Novo_Jogo();
 	void Jogar();
-	void sorteiaEvento();
+	void gerirEvento();
 private:
 	Jogo *jogo; //Ponteiro para poder aceder a classe jogo
 	bool jogo_criado;

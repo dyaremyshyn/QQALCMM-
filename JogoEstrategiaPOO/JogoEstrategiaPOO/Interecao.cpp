@@ -336,6 +336,7 @@ void Interacao::Jogar()
 				next();
 			}
 		}
+		gerirEvento();
 	}
 }
 
@@ -354,6 +355,16 @@ void Interacao::limpaParteDireita()
 }
 
 
-void Interacao::sorteiaEvento() {
-
+void Interacao::gerirEvento() {
+	int nsalas = 3;
+	if (jogo->sorteiaEvento()){
+		jogo->addEvento(new CampoCosmico());
+		for (int i = 0; i < jogo->getEventos().size(); i++) {
+			for (int j = 0; j < nsalas; j++) {
+				srand(time(NULL));
+				int r = rand() % 12 + 0;
+				(jogo->getEventos()[i])->danificaNave(jogo->getSalas()[r]);
+			}
+		}
+	}
 }

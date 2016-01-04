@@ -17,7 +17,7 @@ public:
 	Sala(string n);
 	~Sala();
 	void setIntegridade(int vida);
-	void alteraIntegridade(int dano);
+	void recebeDano(int dano);
 	
 };
 

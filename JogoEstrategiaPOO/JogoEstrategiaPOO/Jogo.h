@@ -35,8 +35,10 @@ public:
 	void Move(string cmd);
 	void turno();
 	void TripulantesDisponiveis();
-	void sorteiaEvento();
-	void danificarSala(Sala *s);
+	vector<Evento*> getEventos();
+	vector<Sala*> getSalas();
+	void addEvento(Evento* e);
+	bool sorteiaEvento();
 
 private:
 	bool chegouFim(int p);
