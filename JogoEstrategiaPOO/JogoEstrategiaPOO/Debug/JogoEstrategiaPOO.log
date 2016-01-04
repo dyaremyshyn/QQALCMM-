@@ -1,9 +1,6 @@
-﻿  Jogo.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(23): warning C4018: '<': signed/unsigned mismatch
+﻿  Interecao.cpp
   Generating Code...
   Skipping... (no relevant changes detected)
   Unidades.cpp
   Consola.cpp
-  main.cpp
-  Interecao.cpp
   JogoEstrategiaPOO.vcxproj -> C:\Users\Dmytro Yaremyshyn\Desktop\qqalcmm-\QQALCMM-\JogoEstrategiaPOO\Debug\JogoEstrategiaPOO.exe

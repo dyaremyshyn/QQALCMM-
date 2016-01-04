@@ -314,20 +314,24 @@ void Interacao::Jogar()
 		string comando, cmd;
 		c.clrscr_comandline();
 		getline(cin, comando);
-
+		
 		if (comando == "next") { // Validação para passar à próxima iteracção
-			//cout << "Antes do turno()\n";
 			jogo->turno(); //O utilizador não quer alterar nada, e avança no turno
-			//cout << "Depois do turno()\n";
 			//next();
 		}
 		else {
 			istringstream iss(comando);
 			iss >> cmd;
+			string e;
+			int p;
+			
+			e = cmd.substr(0, 1); //elemento tripulante "e" fica com a primeira parte da string
+			p = stoi(cmd.substr(1, 99999)); //posição "p" fica com a segunda parte da string
 
 			//*******************************Comandos Relativos a controlo dos tripulantes************************************
 			if (regex_match(cmd, regex_pattern)) { //Mover tripulantes para salas, so aceita letra seguido de numero
 				jogo->Move(cmd);
+				jogo->DesenhaTripulante(e,p);
 				jogo->turno(); //Depois de tomada a acção do utilizador, avança nos turnos
 				next();
 			}
@@ -346,4 +350,10 @@ void Interacao::limpaParteDireita()
 			cout << "                                     ";
 		}
 	}
+	
+}
+
+
+void Interacao::sorteiaEvento() {
+
 }

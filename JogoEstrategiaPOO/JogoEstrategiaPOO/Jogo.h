@@ -5,10 +5,14 @@
 #include <string>
 #include <cstdlib>
 #include <sstream>
+#include <random>
 #include "Sala.h"
+#include"Evento.h"
+
 class Sala;
 class Equipamento;
 class Tripulante;
+
 using namespace std;
 
 class Jogo{
@@ -19,6 +23,7 @@ class Jogo{
 	bool fim_jogo;
 	vector<Sala*> salas; //O jogador equipa a nave com diferentes salas
 	vector<Tripulante*> tripulantes; //O jogador equipa a nave com diferentes tripulantes
+	vector<Evento*> eventos;
 	int iteracao;
 
 public:
@@ -30,7 +35,9 @@ public:
 	void Move(string cmd);
 	void turno();
 	void TripulantesDisponiveis();
-	
+	void sorteiaEvento();
+	void danificarSala(Sala *s);
+
 private:
 	bool chegouFim(int p);
 	

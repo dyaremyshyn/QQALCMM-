@@ -1,8 +1,6 @@
 #pragma once
 #include "Jogo.h"
-class Interacao
-
-{
+class Interacao {
 	Consola c;
 public:
 	Interacao();
@@ -12,6 +10,7 @@ public:
 	void next() { }
 	void Novo_Jogo();
 	void Jogar();
+	void sorteiaEvento();
 private:
 	Jogo *jogo; //Ponteiro para poder aceder a classe jogo
 	bool jogo_criado;

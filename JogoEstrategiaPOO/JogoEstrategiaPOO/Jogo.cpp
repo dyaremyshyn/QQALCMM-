@@ -1,5 +1,6 @@
 #include "Jogo.h"
 
+
 Jogo::Jogo(int d){
 	iteracao = 0;
 	percurso = 0;
@@ -138,6 +139,72 @@ void Jogo::DesenhaSala(int i, string n) {
 
 }
 
+
+void Jogo::DesenhaTripulante(string e, int p)
+{
+	if (p == 1) //Primeira sala
+	{
+		c.gotoxy(6, 6);
+		cout << e;
+
+	}
+	if (p == 2) //Segunda sala 
+	{
+		c.gotoxy(16, 6);
+		cout << e;
+	}
+	if (p == 3) //Terceira sala 
+	{
+		c.gotoxy(26, 6);
+		cout << e;
+	}
+	if (p == 4) //Quarta sala
+	{
+		c.gotoxy(36, 6);
+		cout << e;
+	}
+	if (p == 5)
+	{
+		c.gotoxy(16, 16);
+		cout << e;
+	}
+	if (p == 6)
+	{
+		c.gotoxy(26, 16);
+		cout << e;
+	}
+	if (p == 7)
+	{
+		c.gotoxy(36, 16);
+		cout << e;
+	}
+	if (p == 8)
+	{
+		c.gotoxy(46, 16);
+		cout << e;
+	}
+	if (p == 9)
+	{
+		c.gotoxy(6, 24);
+		cout << e;
+	}
+	if (p == 10)
+	{
+		c.gotoxy(16, 24);
+		cout << e;
+	}
+	if (p == 11)
+	{
+		c.gotoxy(26, 24);
+		cout << e;
+	}
+	if (p == 12)
+	{
+		c.gotoxy(36, 24);
+		cout << e;
+	}
+}
+
 void Jogo::Move(string cmd)
 {
 	string e;
@@ -164,70 +231,7 @@ void Jogo::Move(string cmd)
 	//} while (cmd!="feito");
 }
 
-void Jogo::DesenhaTripulante(string e, int p)
-{
-	if (p == 1) //Primeira sala
-	{
-		c.gotoxy(6, 6);
-		cout << e;
-		
-	}
-	if (p == 2) //Segunda sala 
-	{
-		c.gotoxy(16, 6);
-		cout << e;
-	}
-	if (p == 3) //Terceira sala 
-	{
-		c.gotoxy(26, 6);
-		cout << e;
-	}
-	if (p == 4) //Quarta sala
-	{
-		c.gotoxy(36, 6);
-		cout << e;
-	}
-	if (p == 5) 
-	{
-		c.gotoxy(16, 16);
-		cout << e;
-	}
-	if (p == 6) 
-	{
-		c.gotoxy(26, 16);
-		cout << e;
-	}
-	if (p == 7)
-	{
-		c.gotoxy(36, 16);
-		cout << e;
-	}
-	if (p == 8) 
-	{
-		c.gotoxy(46, 16);
-		cout << e;
-	}
-	if (p == 9)
-	{
-		c.gotoxy(6, 24);
-		cout << e;
-	}
-	if (p == 10)
-	{
-		c.gotoxy(16, 24);
-		cout << e;
-	}
-	if (p == 11) 
-	{
-		c.gotoxy(26, 24);
-		cout << e;
-	}
-	if (p == 12)
-	{
-		c.gotoxy(36, 24);
-		cout << e;
-	}
-}
+
 
 bool Jogo::chegouFim(int p) {
 	if (p >= fim)
@@ -295,4 +299,19 @@ void Jogo::TripulantesDisponiveis()
 		cout << tripulantes[i]->getNome();
 		j++;
 	}
+}
+
+/*
+void Jogo::sorteiaEvento() {
+	srand(time(NULL));
+	int r = rand() % (100 - 1 + 1) + 1;
+	
+	if (r > 70)
+		for (int i = 0; i < eventos.size(); i++)
+			eventos[i]->danificaNave(salas);
+}
+*/
+
+void Jogo::danificarSala(Sala *s) {
+	s->alteraIntegridade(10);
 }

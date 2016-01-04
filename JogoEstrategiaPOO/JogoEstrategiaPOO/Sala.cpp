@@ -29,3 +29,6 @@ void Sala::setIntegridade(int valor)
 	integridade = valor;
 }
 
+void Sala::alteraIntegridade(int dano) {
+	integridade -= dano;
+}
