@@ -1,8 +1,9 @@
-﻿  Interecao.cpp
+﻿  Jogo.cpp
+c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(23): warning C4018: '<': signed/unsigned mismatch
   Generating Code...
   Skipping... (no relevant changes detected)
   Unidades.cpp
   Consola.cpp
   main.cpp
-  Jogo.cpp
-LINK : fatal error LNK1201: error writing to program database 'C:\Users\Dmytro Yaremyshyn\Desktop\qqalcmm-\QQALCMM-\JogoEstrategiaPOO\Debug\JogoEstrategiaPOO.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+  Interecao.cpp
+  JogoEstrategiaPOO.vcxproj -> C:\Users\Dmytro Yaremyshyn\Desktop\qqalcmm-\QQALCMM-\JogoEstrategiaPOO\Debug\JogoEstrategiaPOO.exe

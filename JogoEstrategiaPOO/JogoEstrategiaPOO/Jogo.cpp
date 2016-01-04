@@ -2,6 +2,7 @@
 
 Jogo::Jogo(int d){
 	iteracao = 0;
+	percurso = 0;
 	dificuldade = d;
 	fim = 4000 + 1000 * d;
 	salas.resize(12);
@@ -254,11 +255,15 @@ void Jogo::turno()
 					//if (salas[4]->getintegridade() == 100  /*salas[7]->getestado()==true*/) //Sala de maquinas, se estiver em bom estado, a nave anda
 
 				}
-				percurso = percurso + propulsao;
+				percurso += propulsao;
 				c.gotoxy(65, 3);
 				cout << "********* Iteraccao: " << iteracao << " *********" << endl;
 				c.gotoxy(65, 5);
-				cout << "Ja percorreu: " << percurso;
+				cout << "Objetivo: " << fim << "km" << endl;
+				c.gotoxy(65, 6);
+				cout << "Percurreu: " << percurso << "km" << endl;
+				c.gotoxy(65, 7);
+				cout << "Faltam: " << fim-percurso << "km" << endl;
 			}
 		}
 		if (percurso == 0) {
@@ -266,7 +271,10 @@ void Jogo::turno()
 			cout << "Ninguem esta a operar a Ponte" << endl;
 		}
 	}
-	
+	else {
+		c.gotoxy(65, 5);
+		cout << "Chegou ao fim do percurso!" << endl;
+	}
 
 
 

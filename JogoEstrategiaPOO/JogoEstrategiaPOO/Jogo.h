@@ -15,11 +15,11 @@ class Jogo{
 	Consola c;
     int dificuldade;
 	int percurso;
-	bool fim;
-	int fim_jogo;
+	int fim;
+	bool fim_jogo;
 	vector<Sala*> salas; //O jogador equipa a nave com diferentes salas
 	vector<Tripulante*> tripulantes; //O jogador equipa a nave com diferentes tripulantes
-	static int iteracao;
+	int iteracao;
 
 public:
     Jogo(int d);
