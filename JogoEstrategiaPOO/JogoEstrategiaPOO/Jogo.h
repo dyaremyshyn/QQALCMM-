@@ -19,6 +19,8 @@ class Jogo{
 	int fim_jogo;
 	vector<Sala*> salas; //O jogador equipa a nave com diferentes salas
 	vector<Tripulante*> tripulantes; //O jogador equipa a nave com diferentes tripulantes
+	static int iteracao;
+
 public:
     Jogo(int d);
     ~Jogo();
@@ -28,6 +30,9 @@ public:
 	void Move(string cmd);
 	void turno();
 	void TripulantesDisponiveis();
+	
+private:
+	bool chegouFim(int p);
 	
 };
 

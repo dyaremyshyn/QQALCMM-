@@ -308,13 +308,13 @@ void Interacao::Configurar_Nave() {
 void Interacao::Jogar()
 {
 	limpaParteDireita();
-	
 	while (1) { //Ler comandos quando estamos a jogar
 		regex regex_pattern("[a-z][0-9]+");
 		c.gotoxy(6, 35);
 		string comando, cmd;
 		c.clrscr_comandline();
 		getline(cin, comando);
+
 		if (comando == "next") { // Validação para passar à próxima iteracção
 			//cout << "Antes do turno()\n";
 			jogo->turno(); //O utilizador não quer alterar nada, e avança no turno
@@ -337,10 +337,11 @@ void Interacao::Jogar()
 
 void Interacao::limpaParteDireita()
 {
+	int i, j;
 	c.gotoxy(80, 2);
 	cout << "                            ";
-	for (int i = 65; i < 66; i++) {
-		for (int j = 3; j < 20; j++) {
+	for ( i = 65; i < 66; i++) {
+		for ( j = 3; j < 20; j++) {
 			c.gotoxy(i, j);
 			cout << "                                     ";
 		}

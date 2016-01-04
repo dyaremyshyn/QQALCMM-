@@ -1,4 +1,8 @@
-﻿  Skipping... (no relevant changes detected)
+﻿  Interecao.cpp
+  Generating Code...
+  Skipping... (no relevant changes detected)
   Unidades.cpp
   Consola.cpp
-  JogoEstrategiaPOO.vcxproj -> C:\Users\Dmytro Yaremyshyn\Desktop\qqalcmm-\QQALCMM-\JogoEstrategiaPOO\Debug\JogoEstrategiaPOO.exe
+  main.cpp
+  Jogo.cpp
+LINK : fatal error LNK1201: error writing to program database 'C:\Users\Dmytro Yaremyshyn\Desktop\qqalcmm-\QQALCMM-\JogoEstrategiaPOO\Debug\JogoEstrategiaPOO.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
