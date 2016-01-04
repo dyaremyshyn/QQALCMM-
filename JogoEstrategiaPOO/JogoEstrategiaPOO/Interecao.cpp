@@ -248,6 +248,7 @@ void Interacao::Configurar_Nave() {
 	Sala *sa = new Sala("Sala Armas");
 	Sala *ac = new Sala("Alojamento Capitao");
 	Sala *ofr = new Sala("Oficina Robotica");
+
 	while (1) {
 		c.gotoxy(65, 15);
 		cout << "Tripulantes disponiveis para mover: ";
@@ -257,7 +258,7 @@ void Interacao::Configurar_Nave() {
 		c.clrscr_comandline();
 		getline(cin, comando);
 
-		if (comando == "" || comando == " ") // Validação para tecla Enter
+		if (comando == "next") // passar para próxima iteracção
 			next();
 		else {
 			istringstream iss(comando);
@@ -314,11 +315,11 @@ void Interacao::Jogar()
 		string comando, cmd;
 		c.clrscr_comandline();
 		getline(cin, comando);
-		if (comando == " ") { // Validação para tecla Enter
-			cout << "CHEGUEI AQUI!!!!!!!!!!!!!!!!!!!";
+		if (comando == "next") { // Validação para passar à próxima iteracção
+			//cout << "Antes do turno()\n";
 			jogo->turno(); //O utilizador não quer alterar nada, e avança no turno
-			cout << "CHEGUEI AQUI";
-			next();
+			//cout << "Depois do turno()\n";
+			//next();
 		}
 		else {
 			istringstream iss(comando);

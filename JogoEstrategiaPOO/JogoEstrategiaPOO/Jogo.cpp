@@ -230,11 +230,14 @@ void Jogo::DesenhaTripulante(string e, int p)
 void Jogo::turno()   
 {
 	int propulsao=0;
-
+	//cout << "Dentro do turno, antes do for\n";
 	for (unsigned int i = 0; i < tripulantes.size(); i++) //Percorrer o vector de tripulantes
 	{
+		//cout << "Dentro do turno, dentro do for\n";
 		if (tripulantes[i]->estouPonte(tripulantes[i]->getOndeEstou()) == true) //Algum tripulante está a operar a ponte, a nave pode progredir
 		{
+
+			//cout << "Dentro do turno, dentro do for, dentro do if\n";
 			for (unsigned int i = 0; i < salas.size(); i++) //Verificar quantos propulsores a nave tem, a potencia da nave para deslocar-se é diretamente proporcional aos propulsores instalados
 			{
 				if (salas[i]->getnome() == "Propulsor" || salas[i]->getnome() == "Propulsor Adicional")
