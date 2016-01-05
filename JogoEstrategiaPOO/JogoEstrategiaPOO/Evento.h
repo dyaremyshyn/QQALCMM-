@@ -3,6 +3,7 @@
 
 #include "Libraries.h"
 #include "Sala.h"
+#include "Jogo.h"
 using namespace std;
 
 class Evento {

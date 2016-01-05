@@ -39,6 +39,8 @@ public:
 	vector<Sala*> getSalas();
 	void addEvento(Evento* e);
 	bool sorteiaEvento();
+	void verificaEstadoSala(Sala *s);
+	void mostraMensagens(string msg);
 
 private:
 	bool chegouFim(int p);

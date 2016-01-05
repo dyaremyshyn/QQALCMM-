@@ -364,3 +364,17 @@ bool Jogo::sorteiaEvento() {
 vector<Evento*> Jogo::getEventos() {
 	return eventos;
 }
+
+void Jogo::verificaEstadoSala(Sala * s) {
+
+	if (s->getintegridade() <= 0) {
+		; //pára o jogo e diz que a nave tem uma sala destruida
+		
+		mostraMensagens("Uma das salas sofreu dano grave!");
+	}
+}
+
+void Jogo::mostraMensagens(string msg) {
+	c.gotoxy(65, 10);
+	cout << msg << endl;
+}
