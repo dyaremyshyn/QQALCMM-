@@ -159,7 +159,7 @@ void Interacao::MostraAmbienteGrafico()
 	c.gotoxy(6, 5);
 	cout << "Propulsor";
 	c.gotoxy(6, 7);
-	cout << "I: " << escreveIntegridade(0) << endl;
+	//cout << "I: " << escreveIntegridade(0) << endl;
 	c.gotoxy(19, 5);
 	cout << "?";
 	c.gotoxy(29, 5);
@@ -171,27 +171,27 @@ void Interacao::MostraAmbienteGrafico()
 	c.gotoxy(17, 15);
 	cout << "Maquinas";
 	c.gotoxy(18, 17);
-	cout << "I: " << escreveIntegridade(4) << endl;
+	//cout << "I: " << escreveIntegridade(4) << endl;
 	c.gotoxy(27, 14);
 	cout << "Suporte";
 	c.gotoxy(27, 15);
 	cout << "de Vida";
 	c.gotoxy(27, 17);
-	cout << "I: " << escreveIntegridade(5) << endl;
+	//cout << "I: " << escreveIntegridade(5) << endl;
 	c.gotoxy(37, 14);
 	cout << "Controlo";
 	c.gotoxy(36, 15);
 	cout << "de Escudo";
 	c.gotoxy(36, 17);
-	cout << "I: " << escreveIntegridade(6) << endl;
+	//cout << "I: " << escreveIntegridade(6) << endl;
 	c.gotoxy(48, 14);
 	cout << "Ponte";
 	c.gotoxy(48, 16);
-	cout << "I: " << escreveIntegridade(7) << endl;
+	//cout << "I: " << escreveIntegridade(7) << endl;
 	c.gotoxy(6, 21);
 	cout << "Propulsor";
 	c.gotoxy(6, 23);
-	cout << "I: " << escreveIntegridade(8) << endl;
+	//cout << "I: " << escreveIntegridade(8) << endl;
 	c.gotoxy(20, 21);
 	cout << "?";
 	c.gotoxy(30, 21);
@@ -320,14 +320,20 @@ void Interacao::Configurar_Nave() {
 
 void Interacao::Jogar()
 {
+	limpaParteDireita();
 	while (1) { //Ler comandos quando estamos a jogar
-		limpaParteDireita();
+		
 		regex regex_pattern("[a-z][0-9]+");
 		c.gotoxy(6, 35);
 		string comando, cmd;
 		c.clrscr_comandline();
 		getline(cin, comando);
 		
+		if (jogo->sorteiaEvento()) {
+			c.gotoxy(65, 8);
+			cout << "                          ";
+		}
+
 		if (comando == "next") { // Validação para passar à próxima iteracção
 			jogo->turno(); //O utilizador não quer alterar nada, e avança no turno
 			//next();
@@ -384,6 +390,6 @@ void Interacao::gerirEvento() {
 	}
 }
 
-int Interacao::escreveIntegridade(int pos) {
-	return (jogo->getSalas()[pos])->getintegridade();
-}
+//int Interacao::escreveIntegridade(int pos) {
+//	return (jogo->getSalas()[pos])->getintegridade();
+//}
