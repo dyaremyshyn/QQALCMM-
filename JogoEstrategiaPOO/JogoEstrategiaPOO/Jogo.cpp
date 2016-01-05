@@ -23,8 +23,29 @@ Jogo::~Jogo(){
 		delete eventos[i];
 }
 
-void Jogo::AdicionaSala(Sala *s)
-{
+void Jogo::AdicionaSala(Sala *s) {
+	int i = 0;
+	do {
+		if (salas[i] == NULL)
+		{          //Adiciona sala caso ainda haja espaço no vetor de salas que existe na nave
+			salas.at(i) = s;			//Atribuir à posição i do vetor que esteja vazia a sala "propulsor adicional" 
+			if (s->getnome() == "Beliche")
+				tripulantes.push_back(new Tripulante());
+			DesenhaSala(i, salas[i]->getnome());
+			break;
+		}
+		if (salas[11] != NULL)
+		{
+			c.gotoxy(65, 20);
+			cout << "AVISO!" << endl;
+			c.gotoxy(65, 21);
+			cout <<"Nao pode adicionar mais salas.";
+			break;
+		}		
+		i++;
+	} while (i < salas.size());
+
+	/*
 	for (int i = 0; i < salas.size(); i++) {
 		//if (salas[i]->getnome() == "Alojamento Capitao")          //So pode existir uma sala para alijar o capitao
 		//	{	
@@ -41,10 +62,12 @@ void Jogo::AdicionaSala(Sala *s)
 			}
 		if (salas[11] != NULL)
 		{
+			c.gotoxy(65, 8);
 			cout << "Nao pode adicionar mais";
 			break;
 		}
 	}
+	*/
 }
 
 void Jogo::DesenhaSala(int i, string n) {
@@ -63,6 +86,9 @@ void Jogo::DesenhaSala(int i, string n) {
 		}
 		else
 			cout << n;
+	
+		c.gotoxy(16, 8);
+		cout << "I: " << salas[i]->getintegridade()<< endl;
 	}
 	if (i == 2) //Segunda sala com "?" na primeira linha
 	{
@@ -78,6 +104,9 @@ void Jogo::DesenhaSala(int i, string n) {
 		}
 		else
 			cout << n;
+
+		c.gotoxy(26, 8);
+		cout << "I: " << salas[i]->getintegridade()<< endl;
 	}
 	if (i == 3) //Terceira sala com "?" na primeira linha
 	{
@@ -93,6 +122,9 @@ void Jogo::DesenhaSala(int i, string n) {
 		}
 		else
 			cout << n;
+
+		c.gotoxy(36, 8);
+		cout << "I: " << salas[i]->getintegridade() << endl;
 	}
 	if (i == 9) //Quarta sala com "?" na Terceira linha
 	{
@@ -108,6 +140,9 @@ void Jogo::DesenhaSala(int i, string n) {
 		}
 		else
 			cout << n;
+
+		c.gotoxy(16, 25);
+		cout << "I: " << salas[i]->getintegridade() << endl;
 	}
 	if (i == 10) //Quinta sala com "?" na Terceira linha
 	{
@@ -123,6 +158,9 @@ void Jogo::DesenhaSala(int i, string n) {
 		}
 		else
 			cout << n;
+
+		c.gotoxy(26, 25);
+		cout << "I: " << salas[i]->getintegridade() << endl;
 	}
 	if (i == 11) //Sexta sala com "?" na Terceira linha
 	{
@@ -138,6 +176,9 @@ void Jogo::DesenhaSala(int i, string n) {
 		}
 		else
 			cout << n;
+
+		c.gotoxy(36, 25);
+		cout << "I: " << salas[i]->getintegridade() << endl;
 	}
 
 }
@@ -304,25 +345,10 @@ void Jogo::TripulantesDisponiveis()
 	}
 }
 
-/*
-void Jogo::sorteiaEvento() {
-	srand(time(NULL));
-	int r = rand() % (100 - 1 + 1) + 1;
-	
-	if (r > 70)
-		for (int i = 0; i < eventos.size(); i++)
-			eventos[i]->danificaNave(salas);
-}
-*/
-
 vector<Sala*> Jogo::getSalas() {
 	return salas;
 }
 
-/*
-void Jogo::danificarSala(Sala *s) {
-	s->recebeDano(10);
-}*/
 
 void Jogo::addEvento(Evento *e) {
 	eventos.push_back(e);

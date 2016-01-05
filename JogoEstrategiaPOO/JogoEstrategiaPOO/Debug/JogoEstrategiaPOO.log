@@ -1,13 +1,9 @@
-﻿  Jogo.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(22): warning C4018: '<': signed/unsigned mismatch
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(28): warning C4018: '<': signed/unsigned mismatch
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(331): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Interecao.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\interecao.cpp(362): warning C4018: '<': signed/unsigned mismatch
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\interecao.cpp(364): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+﻿  Interecao.cpp
+c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\interecao.cpp(347): warning C4018: '<': signed/unsigned mismatch
+c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\interecao.cpp(377): warning C4018: '<': signed/unsigned mismatch
+c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\interecao.cpp(379): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Generating Code...
   Skipping... (no relevant changes detected)
   Unidades.cpp
   Consola.cpp
-  main.cpp
-  JogoEstrategiaPOO.vcxproj -> C:\Users\Dmytro Yaremyshyn\Desktop\qqalcmm-\QQALCMM-\JogoEstrategiaPOO\Debug\JogoEstrategiaPOO.exe
+LINK : fatal error LNK1201: error writing to program database 'C:\Users\Dmytro Yaremyshyn\Desktop\qqalcmm-\QQALCMM-\JogoEstrategiaPOO\Debug\JogoEstrategiaPOO.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
