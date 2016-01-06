@@ -12,6 +12,7 @@
 class Sala;
 class Equipamento;
 class Tripulante;
+class Evento;
 
 using namespace std;
 

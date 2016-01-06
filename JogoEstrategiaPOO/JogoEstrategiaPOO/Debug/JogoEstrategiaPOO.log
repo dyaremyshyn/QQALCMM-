@@ -2,7 +2,6 @@
 c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\interecao.cpp(353): warning C4018: '<': signed/unsigned mismatch
 c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\interecao.cpp(383): warning C4018: '<': signed/unsigned mismatch
 c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\interecao.cpp(385): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Evento.cpp
   Generating Code...
   Skipping... (no relevant changes detected)
   Unidades.cpp

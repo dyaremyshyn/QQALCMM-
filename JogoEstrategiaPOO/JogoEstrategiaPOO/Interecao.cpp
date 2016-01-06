@@ -367,7 +367,7 @@ void Interacao::limpaParteDireita()
 	c.gotoxy(80, 2);
 	cout << "                            ";
 	for ( i = 65; i < 66; i++) {
-		for ( j = 3; j < 20; j++) {
+		for ( j = 3; j < 22; j++) {
 			c.gotoxy(i, j);
 			cout << "                                     ";
 		}

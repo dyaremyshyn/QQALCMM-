@@ -368,7 +368,7 @@ vector<Evento*> Jogo::getEventos() {
 void Jogo::verificaEstadoSala(Sala * s) {
 
 	if (s->getintegridade() <= 0) {
-		; //pára o jogo e diz que a nave tem uma sala destruida
+		fim_jogo = true; //pára o jogo e diz que a nave tem uma sala destruida
 		
 		mostraMensagens("Uma das salas sofreu dano grave!");
 	}

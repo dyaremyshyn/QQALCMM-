@@ -1,5 +1,5 @@
 #include <cstdlib>
-
+#include "Consola.h"
 #include "Jogo.h"
 #include "Interacao.h"
 
