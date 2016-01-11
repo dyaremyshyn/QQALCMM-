@@ -16,6 +16,12 @@
     <Filter Include="Header Files\Salas">
       <UniqueIdentifier>{0e66a5d2-628e-4b59-b531-f6919b0a9a90}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Eventos">
+      <UniqueIdentifier>{8febab19-7f43-4bb2-9f89-c0c9a3832078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Eventos">
+      <UniqueIdentifier>{6ee17b6f-52f0-4704-ba01-ec3e71752227}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Consola.cpp">
@@ -40,7 +46,19 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Evento.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Eventos</Filter>
+    </ClCompile>
+    <ClCompile Include="CampoCosmico.cpp">
+      <Filter>Source Files\Eventos</Filter>
+    </ClCompile>
+    <ClCompile Include="AtaquePiratas.cpp">
+      <Filter>Source Files\Eventos</Filter>
+    </ClCompile>
+    <ClCompile Include="AtaqueXenomorfo.cpp">
+      <Filter>Source Files\Eventos</Filter>
+    </ClCompile>
+    <ClCompile Include="ChuvaMeteoritos.cpp">
+      <Filter>Source Files\Eventos</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -69,9 +87,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Xenomorfos.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Evento.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Oficina_Robotica.h">
@@ -115,6 +130,21 @@
     </ClInclude>
     <ClInclude Include="Sistema_Seguranca_Interno.h">
       <Filter>Header Files\Salas</Filter>
+    </ClInclude>
+    <ClInclude Include="CampoCosmico.h">
+      <Filter>Header Files\Eventos</Filter>
+    </ClInclude>
+    <ClInclude Include="Evento.h">
+      <Filter>Header Files\Eventos</Filter>
+    </ClInclude>
+    <ClInclude Include="ChuvaMeteoritos.h">
+      <Filter>Header Files\Eventos</Filter>
+    </ClInclude>
+    <ClInclude Include="AtaquePiratas.h">
+      <Filter>Header Files\Eventos</Filter>
+    </ClInclude>
+    <ClInclude Include="AtaqueXenomorfo.h">
+      <Filter>Header Files\Eventos</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

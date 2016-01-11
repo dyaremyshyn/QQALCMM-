@@ -11,6 +11,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AtaquePiratas.cpp" />
+    <ClCompile Include="AtaqueXenomorfo.cpp" />
+    <ClCompile Include="CampoCosmico.cpp" />
+    <ClCompile Include="ChuvaMeteoritos.cpp" />
     <ClCompile Include="Consola.cpp" />
     <ClCompile Include="Evento.cpp" />
     <ClCompile Include="Interecao.cpp" />
@@ -22,8 +26,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Alojamento_Capitao.h" />
+    <ClInclude Include="AtaquePiratas.h" />
+    <ClInclude Include="AtaqueXenomorfo.h" />
     <ClInclude Include="Auto_Reparador.h" />
     <ClInclude Include="Beliche.h" />
+    <ClInclude Include="CampoCosmico.h" />
+    <ClInclude Include="ChuvaMeteoritos.h" />
     <ClInclude Include="Consola.h" />
     <ClInclude Include="Controlo_Escudo.h" />
     <ClInclude Include="Enfermaria.h" />

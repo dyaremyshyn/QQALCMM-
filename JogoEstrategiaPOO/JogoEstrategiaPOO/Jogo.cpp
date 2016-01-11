@@ -113,6 +113,7 @@ bool Jogo::VerificaTripulantesSeEstaEmSala() const {
 		else
 			return false;
 	}
+	return false;
 }
 
 void Jogo::turno()   

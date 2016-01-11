@@ -1,5 +1,6 @@
 #pragma once
 #include "Jogo.h"
+#include "Evento.h"
 class Interacao {
 	Consola c;
 public:

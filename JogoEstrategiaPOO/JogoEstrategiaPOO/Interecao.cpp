@@ -1,4 +1,5 @@
 #include "Interacao.h"
+#include "CampoCosmico.h"
 Interacao::Interacao()
 {
 		jogo_criado = false; //O jogador ainda nao iniciou o jogo

@@ -1,7 +1,7 @@
 #include "Evento.h"
 #include <random>
 
-
+/*
 void CampoCosmico::danificaNave(Sala* s) {
 	Consola c;
 	//Jogo *j;
@@ -12,3 +12,4 @@ void CampoCosmico::danificaNave(Sala* s) {
 	cout << s->getnome() << " recebeu dano." << endl;
 	//j->verificaEstadoSala(s); //verifica estado da sala; se integridade da sala correspondente for <=0 então nave rebenta, pára o jogo
 }
+*/
