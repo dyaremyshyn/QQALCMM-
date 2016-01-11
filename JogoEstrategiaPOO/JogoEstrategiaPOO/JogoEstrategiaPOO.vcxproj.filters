@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Salas">
+      <UniqueIdentifier>{0e66a5d2-628e-4b59-b531-f6919b0a9a90}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Consola.cpp">
@@ -22,9 +25,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Jogo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Nave.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Sala.cpp">
@@ -59,9 +59,6 @@
     <ClInclude Include="Libraries.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Nave.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Sala.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -76,6 +73,48 @@
     </ClInclude>
     <ClInclude Include="Evento.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Oficina_Robotica.h">
+      <Filter>Header Files\Salas</Filter>
+    </ClInclude>
+    <ClInclude Include="Propulsor.h">
+      <Filter>Header Files\Salas</Filter>
+    </ClInclude>
+    <ClInclude Include="Ponte.h">
+      <Filter>Header Files\Salas</Filter>
+    </ClInclude>
+    <ClInclude Include="Propulsor_Adicional.h">
+      <Filter>Header Files\Salas</Filter>
+    </ClInclude>
+    <ClInclude Include="Raio_Laser.h">
+      <Filter>Header Files\Salas</Filter>
+    </ClInclude>
+    <ClInclude Include="Sala_Armas.h">
+      <Filter>Header Files\Salas</Filter>
+    </ClInclude>
+    <ClInclude Include="Sala_Maquinas.h">
+      <Filter>Header Files\Salas</Filter>
+    </ClInclude>
+    <ClInclude Include="Suporte_Vida.h">
+      <Filter>Header Files\Salas</Filter>
+    </ClInclude>
+    <ClInclude Include="Alojamento_Capitao.h">
+      <Filter>Header Files\Salas</Filter>
+    </ClInclude>
+    <ClInclude Include="Auto_Reparador.h">
+      <Filter>Header Files\Salas</Filter>
+    </ClInclude>
+    <ClInclude Include="Beliche.h">
+      <Filter>Header Files\Salas</Filter>
+    </ClInclude>
+    <ClInclude Include="Controlo_Escudo.h">
+      <Filter>Header Files\Salas</Filter>
+    </ClInclude>
+    <ClInclude Include="Enfermaria.h">
+      <Filter>Header Files\Salas</Filter>
+    </ClInclude>
+    <ClInclude Include="Sistema_Seguranca_Interno.h">
+      <Filter>Header Files\Salas</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -44,6 +44,7 @@ public:
 	string getNomeSala(int i) const;
 	string getTripulantes(int salai) const;
 	bool VerificaTripulantesSeEstaEmSala() const;
+	bool guiaNave(Tripulante *a);
 
 private:
 	bool chegouFim(int p);

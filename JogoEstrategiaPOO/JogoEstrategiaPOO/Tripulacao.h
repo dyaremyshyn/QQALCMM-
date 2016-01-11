@@ -8,9 +8,7 @@ class Sala;
 class Tripulante
 {
 	int vida;
-//	Sala posicao;
-//	string nome;
-//	string comando;
+
 	   
 public:
 	Tripulante();

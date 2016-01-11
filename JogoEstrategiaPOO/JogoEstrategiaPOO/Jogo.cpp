@@ -75,7 +75,6 @@ void Jogo::AdicionaSala(Sala *s) {
 	*/
 }
 
-
 void Jogo::Move(string cmd)
 {
 	string e;
@@ -98,8 +97,6 @@ void Jogo::Move(string cmd)
 			}
 		}
 }
-
-
 
 bool Jogo::chegouFim(int p) {
 	if (p >= fim)
@@ -198,7 +195,6 @@ string Jogo::getTripulantes(int salai) const
 	}
 	return oss.str();
 }
-
 void Jogo::addEvento(Evento *e) {
 	eventos.push_back(e);
 }
@@ -234,4 +230,10 @@ bool Jogo::VerificaSalas()
 		return true;
 	else
 		return false;
+}
+bool Jogo::guiaNave(Tripulante *a)
+{
+	if (a != NULL)
+		return true;
+	return false;
 }

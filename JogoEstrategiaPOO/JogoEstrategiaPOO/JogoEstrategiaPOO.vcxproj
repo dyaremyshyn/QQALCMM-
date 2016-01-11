@@ -16,20 +16,32 @@
     <ClCompile Include="Interecao.cpp" />
     <ClCompile Include="Jogo.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Nave.cpp" />
     <ClCompile Include="Sala.cpp" />
     <ClCompile Include="Tripulacao.cpp" />
     <ClCompile Include="Unidades.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Alojamento_Capitao.h" />
+    <ClInclude Include="Auto_Reparador.h" />
+    <ClInclude Include="Beliche.h" />
     <ClInclude Include="Consola.h" />
+    <ClInclude Include="Controlo_Escudo.h" />
+    <ClInclude Include="Enfermaria.h" />
     <ClInclude Include="Evento.h" />
     <ClInclude Include="Inimigos.h" />
     <ClInclude Include="Interacao.h" />
     <ClInclude Include="Jogo.h" />
     <ClInclude Include="Libraries.h" />
-    <ClInclude Include="Nave.h" />
+    <ClInclude Include="Oficina_Robotica.h" />
+    <ClInclude Include="Ponte.h" />
+    <ClInclude Include="Propulsor.h" />
+    <ClInclude Include="Propulsor_Adicional.h" />
+    <ClInclude Include="Raio_Laser.h" />
+    <ClInclude Include="Sala_Armas.h" />
+    <ClInclude Include="Sala_Maquinas.h" />
     <ClInclude Include="Sala.h" />
+    <ClInclude Include="Sistema_Seguranca_Interno.h" />
+    <ClInclude Include="Suporte_Vida.h" />
     <ClInclude Include="Tripulacao.h" />
     <ClInclude Include="Unidades.h" />
     <ClInclude Include="Xenomorfos.h" />
