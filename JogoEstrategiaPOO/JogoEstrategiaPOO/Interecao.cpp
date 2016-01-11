@@ -3,7 +3,6 @@ Interacao::Interacao()
 {
 		jogo_criado = false; //O jogador ainda nao iniciou o jogo
 }
-
 void Interacao::Entrada()
 {
 	c.setTextSize(8, 8); //Temos de diminuir o tamanho da letra para caber dentro da janela
@@ -43,18 +42,34 @@ void Interacao::Entrada()
 	c.setTextColor(c.BRANCO_CLARO);
 	c.setScreenSize(80, 100);
 }
+void Interacao::Novo_Jogo()
+{
+	string n;
 
+	regex regex_pattern("^[1-9]+$");
+	do
+	{
+		c.gotoxy(3, 35);
+		c.clrscr_comandline();
+		cout << "Indique a Dificuldade do jogo: ";
+		cin >> n;
+	} while (!regex_match(n, regex_pattern));
+
+	int valor = atoi(n.c_str()); //converter string n para inteiro
+	jogo = new Jogo(valor);
+}
 void Interacao::MostraAmbienteGrafico()
 {
-	c.setScreenSize(45, 115);
-
+	c.setScreenSize(100, 170);
+	c.setTextSize(16, 16);
 	/*Desenhar janela esquerda onde vai estar a nave*/
 	c.gotoxy(1, 1);
-	for (int i = 0; i < 60;i++) //Desenhar linha horizontal superior da janela
+	
+	for (int i = 0; i < 115; i++) //Desenhar linha horizontal superior da janela
 		cout << char(220);
 
 	c.gotoxy(1, 30);
-	for (int i = 0; i < 60; i++) //Desenhar linha horizontal inferior da janela
+	for (int i = 0; i < 115; i++) //Desenhar linha horizontal inferior da janela
 		cout << char(220);
 
 	for (int j = 2; j < 31; j++) //Desenhar linha vertical esquerda da janela
@@ -65,89 +80,89 @@ void Interacao::MostraAmbienteGrafico()
 
 	for (int j = 2; j < 31; j++) //Desenhar linha vertical direita da janela
 	{
-		c.gotoxy(60, j);
+		c.gotoxy(115, j);
 		cout << char(178);
 	}
 
 
 	/*Desenhar janela direita onde vai estar o historico de eventos*/
-	c.gotoxy(62, 1);
+	c.gotoxy(117, 1);
 	for (int i = 0; i < 50; i++) //Desenhar linha horizontal superior da janela
 		cout << char(220);
 
-	c.gotoxy(62, 30);
+	c.gotoxy(117, 30);
 	for (int i = 0; i < 50; i++) //Desenhar linha horizontal inferior da janela
 		cout << char(220);
 
 	for (int j = 2; j < 31; j++) //Desenhar linha vertical esquerda da janela
 	{
-		c.gotoxy(62, j);
+		c.gotoxy(117, j);
 		cout << char(178);
 	}
 
 	for (int j = 2; j < 31; j++) //Desenhar linha vertical direita da janela
 	{
-		c.gotoxy(111, j);
+		c.gotoxy(166, j);
 		cout << char(178);
 	}
 
 	/*Desenhar janela direita onde vai estar a linha de comandos*/
 	c.gotoxy(1, 32);
-	for (int i = 0; i < 111; i++) //Desenhar linha horizontal superior da janela
+	for (int i = 0; i < 166; i++) //Desenhar linha horizontal superior da janela
 		cout << char(220);
 
-	c.gotoxy(1, 42);
-	for (int i = 0; i < 111; i++) //Desenhar linha horizontal inferior da janela
+	c.gotoxy(1, 37);
+	for (int i = 0; i < 166; i++) //Desenhar linha horizontal inferior da janela
 		cout << char(220);
 
-	for (int j = 33; j < 43; j++) //Desenhar linha vertical esquerda da janela
+	for (int j = 33; j < 38; j++) //Desenhar linha vertical esquerda da janela
 	{
 		c.gotoxy(1, j);
 		cout << char(178);
 	}
 
-	for (int j = 33; j < 43; j++) //Desenhar linha vertical direita da janela
+	for (int j = 33; j < 38; j++) //Desenhar linha vertical direita da janela
 	{
-		c.gotoxy(111, j);
+		c.gotoxy(166, j);
 		cout << char(178);
 	}
 
 	/*////////////////////////////////DESENHAR NAVE/////////////////////////////////////////*/
 	
-	c.gotoxy(5, 4);
-	for (int i = 0; i < 40; i++)		//Primeira Linha
+	c.gotoxy(5, 3);
+	for (int i = 0; i < 81; i++)		//Primeira Linha
 		cout << char(178);				//Desenha linha
-	c.gotoxy(5, 12);				    //Posição da linha seguinte
-	for (int i = 0; i < 50; i++)		//Segunda Linha
+	c.gotoxy(5, 11);				    //Posição da linha seguinte
+	for (int i = 0; i < 101; i++)		//Segunda Linha
 		cout << char(178);
 	
-	c.gotoxy(5, 20);					//Posição da linha seguinte
-	for (int i = 0; i < 50; i++)		//Terceira Linha
+	c.gotoxy(5, 19);					//Posição da linha seguinte
+	for (int i = 0; i < 101; i++)		//Terceira Linha
 		cout << char(178);
 	
 	c.gotoxy(5, 28);					//Posição da linha seguinte
-	for (int i = 0; i < 40; i++)		//Quarta Linha
+	for (int i = 0; i < 81; i++)		//Quarta Linha
 		cout << char(178);
 
-	for (int i = 5; i < 48; i = i + 10) //Ciclo para desenhar colunas da primeira linha da nave
+	for (int i = 5; i <90; i = i + 20) //Ciclo para desenhar colunas da primeira linha da nave
 	{
-		for (int j = 4; j < 13; j++)    //Cada espaçamente entre as linhas tem 8 caracteres
+		for (int j = 4; j < 11; j++)    //Cada espaçamente entre as linhas tem 8 caracteres
 		{
 			c.gotoxy(i, j);
 			cout << char(178);
 		}
 	}
 
-	for (int i = 15; i < 58; i = i + 10) //Ciclo para desenhar colunas da segunda linha da nave
+	for (int i = 25; i < 110; i = i + 20) //Ciclo para desenhar colunas da segunda linha da nave
 	{
-		for (int j = 12; j < 21; j++) //Cada espaçamente entre as linhas tem 8 caracteres
+		for (int j = 12; j < 19; j++) //Cada espaçamente entre as linhas tem 8 caracteres
 		{
 			c.gotoxy(i, j);
 			cout << char(178);
 		}
 	}
 	
-	for (int i = 5; i < 48; i = i + 10) //Ciclo para desenhar colunas da terceira linha da nave
+	for (int i = 5; i < 90; i = i + 20) //Ciclo para desenhar colunas da terceira linha da nave
 	{
 		for (int j = 20; j < 29; j++) //Cada espaçamente entre as linhas tem 5 caracteres
 		{
@@ -155,100 +170,67 @@ void Interacao::MostraAmbienteGrafico()
 			cout << char(178);
 		}
 	}
-
-	c.gotoxy(6, 5);
-	cout << "Propulsor";
-	c.gotoxy(6, 7);
-	//cout << "I: " << escreveIntegridade(0) << endl;
-	c.gotoxy(19, 5);
-	cout << "?";
-	c.gotoxy(29, 5);
-	cout << "?";
-	c.gotoxy(39, 5);
-	cout << "?";
-	c.gotoxy(18, 14);					//Posição do quadrado da sala de maquinas
-	cout << "Sala";
-	c.gotoxy(17, 15);
-	cout << "Maquinas";
-	c.gotoxy(18, 17);
-	//cout << "I: " << escreveIntegridade(4) << endl;
-	c.gotoxy(27, 14);
-	cout << "Suporte";
-	c.gotoxy(27, 15);
-	cout << "de Vida";
-	c.gotoxy(27, 17);
-	//cout << "I: " << escreveIntegridade(5) << endl;
-	c.gotoxy(37, 14);
-	cout << "Controlo";
-	c.gotoxy(36, 15);
-	cout << "de Escudo";
-	c.gotoxy(36, 17);
-	//cout << "I: " << escreveIntegridade(6) << endl;
-	c.gotoxy(48, 14);
-	cout << "Ponte";
-	c.gotoxy(48, 16);
-	//cout << "I: " << escreveIntegridade(7) << endl;
-	c.gotoxy(6, 21);
-	cout << "Propulsor";
-	c.gotoxy(6, 23);
-	//cout << "I: " << escreveIntegridade(8) << endl;
-	c.gotoxy(20, 21);
-	cout << "?";
-	c.gotoxy(30, 21);
-	cout << "?";
-	c.gotoxy(40, 21);
-	cout << "?";
-
-	/*************************************Mostrar comandos disponiveis********************************/
-	c.gotoxy(80, 2);
-	cout << "Configure a nave: ";
-	c.gotoxy(65, 3);
-	cout << "Comandos: ";
-	c.gotoxy(65, 4);
-	cout << "pa -> Propulsores Adicionais";
-	c.gotoxy(65, 5);
-	cout << "b -> Beliche";
-	c.gotoxy(65, 6);
-	cout << "rl -> Raio Laser";
-	c.gotoxy(65, 7);
-	cout << "ar -> Auto-Reparador";
-	c.gotoxy(65, 8);
-	cout << "ss -> Sistema de Segurança Interno";
-	c.gotoxy(65, 9);
-	cout << "e -> Enfermaria";
-	c.gotoxy(65, 10);
-	cout << "sa -> Sala de Armas";
-	c.gotoxy(65, 11);
-	cout << "ac -> Alojamentos do Capitão";
-	c.gotoxy(65, 12);
-	cout << "or -> Oficina Robótica";
-	
-
-	Novo_Jogo();
-
-	c.gotoxy(50, 33);
+	c.gotoxy(70, 33);
 	cout << "<<Comandos>>";
 	c.gotoxy(3, 35);
 	cout << ">>:";
 
+	/*********************************************Desenhar Salas****************************************/
+	int x = 6;
+	int y = 6;
+	for (unsigned int i = 0; i < 12; i++)
+	{
+		c.gotoxy(x, y);
+		cout << jogo->getNomeSala(i);
+		if (jogo->VerificaTripulantesSeEstaEmSala()==true)
+		{
+			c.gotoxy(x, y + 1);
+			cout << jogo->getTripulantes(i);
+		}
+		x = x + 20;
+		if (x == 86)
+		{
+			x = 28;
+			y = 14;
+		}
+		if (x == 108 && y == 14)
+		{
+			x = 6;
+			y = 23;
+		}
+	}
+	/*****************************************Acabou de Desenhar Salas**************************************/
+	
+}
+void Interacao::Jogo_A_Iniciar()
+{
+
+	/*************************************Mostrar comandos disponiveis********************************/
+	c.gotoxy(135, 2);
+	cout << "Configure a nave: ";
+	c.gotoxy(120, 3);
+	cout << "Comandos: ";
+	c.gotoxy(120, 4);
+	cout << "pa -> Propulsores Adicionais";
+	c.gotoxy(120, 5);
+	cout << "b -> Beliche";
+	c.gotoxy(120, 6);
+	cout << "rl -> Raio Laser";
+	c.gotoxy(120, 7);
+	cout << "ar -> Auto-Reparador";
+	c.gotoxy(120, 8);
+	cout << "ss -> Sistema de Seguranca Interno";
+	c.gotoxy(120, 9);
+	cout << "e -> Enfermaria";
+	c.gotoxy(120, 10);
+	cout << "sa -> Sala de Armas";
+	c.gotoxy(120, 11);
+	cout << "ac -> Alojamentos do Capitao";
+	c.gotoxy(120, 12);
+	cout << "or -> Oficina Robotica";
+
 }
 
-void Interacao::Novo_Jogo()
-{
-	string n;
-	
-	regex regex_pattern("^[1-9]+$");
-	do
-	{
-		c.gotoxy(3, 35);
-		c.clrscr_comandline();
-		cout << "Indique a Dificuldade do jogo: ";
-		cin >> n;
-	} while (!regex_match(n, regex_pattern));
-	
-	int valor = atoi(n.c_str()); //converter string n para inteiro
-	jogo = new Jogo(valor);
-}
 
 void Interacao::Configurar_Nave() {
 	regex regex_pattern("[a-z][0-9]+");
@@ -263,7 +245,7 @@ void Interacao::Configurar_Nave() {
 	Sala *ofr = new Sala("Oficina Robotica");
 
 	while (1) {
-		c.gotoxy(65, 15);
+		c.gotoxy(120, 15);
 		cout << "Tripulantes disponiveis para mover: ";
 		jogo->TripulantesDisponiveis();
 		c.gotoxy(6, 35);
@@ -281,37 +263,50 @@ void Interacao::Configurar_Nave() {
 
 			if (cmd == "pa") {
 				jogo->AdicionaSala(pa);
+				MostraAmbienteGrafico();
 			}
 			if (cmd == "b") {
 				jogo->AdicionaSala(b);
+				MostraAmbienteGrafico();
 			}
 			if (cmd == "rl") {
 				jogo->AdicionaSala(rl);
+				MostraAmbienteGrafico();
 			}
 			if (cmd == "ar") {
 				jogo->AdicionaSala(ar);
+				MostraAmbienteGrafico();
 			}
 			if (cmd == "ss") {
 				jogo->AdicionaSala(ss);
+				MostraAmbienteGrafico();
 			}
 			if (cmd == "e") {
 				jogo->AdicionaSala(e);
+				MostraAmbienteGrafico();
 			}
 			if (cmd == "sa") {
 				jogo->AdicionaSala(sa);
+				MostraAmbienteGrafico();
 			}
 			if (cmd == "ac") {
 				jogo->AdicionaSala(ac);
+				MostraAmbienteGrafico();
 			}
 			if (cmd == "or") {
 				jogo->AdicionaSala(ofr);
+				MostraAmbienteGrafico();
 			}
 			if (regex_match(cmd, regex_pattern)) { //Mover tripulantes para salas, so aceita letra seguido de numero
 				jogo->Move(cmd);
+				MostraAmbienteGrafico();
 			}
 			if (cmd == "feito")
 			{
-				Jogar();
+				if(jogo->VerificaSalas())
+					cout << "Falta preencher salas";
+				else
+					Jogar();
 			}
 		}
 
@@ -351,8 +346,6 @@ void Interacao::Jogar()
 			if (regex_match(cmd, regex_pattern)) { //Mover tripulantes para salas, so aceita letra seguido de numero
 				jogo->Move(cmd);
 				for (int i = 0; i < jogo->getSalas().size(); i++)
-					jogo->DesenhaSala(i,jogo->getSalas()[i]->getnome());
-				jogo->DesenhaTripulante(e,p);
 				jogo->turno(); //Depois de tomada a acção do utilizador, avança nos turnos
 				next();
 			}

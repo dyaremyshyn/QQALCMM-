@@ -8,6 +8,7 @@ using namespace std;
 class Sala{
 private:
     string nome;
+	int posicao;
     int oxigenio;
 	int integridade;
 public:

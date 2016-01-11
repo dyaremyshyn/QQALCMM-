@@ -11,6 +11,7 @@ public:
 	void Novo_Jogo();
 	void Jogar();
 	void gerirEvento();
+	void Jogo_A_Iniciar();
 	//int escreveIntegridade(int pos);
 private:
 	Jogo *jogo; //Ponteiro para poder aceder a classe jogo

@@ -31,8 +31,6 @@ public:
     Jogo(int d);
     ~Jogo();
 	void AdicionaSala(Sala *s);
-	void DesenhaSala(int i, string n);
-	void DesenhaTripulante(string e, int p);
 	void Move(string cmd);
 	void turno();
 	void TripulantesDisponiveis();
@@ -42,6 +40,10 @@ public:
 	bool sorteiaEvento();
 	void verificaEstadoSala(Sala *s);
 	void mostraMensagens(string msg);
+	bool VerificaSalas();
+	string getNomeSala(int i) const;
+	string getTripulantes(int salai) const;
+	bool VerificaTripulantesSeEstaEmSala() const;
 
 private:
 	bool chegouFim(int p);
