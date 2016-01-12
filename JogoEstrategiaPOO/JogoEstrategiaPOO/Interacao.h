@@ -1,6 +1,11 @@
 #pragma once
 #include "Jogo.h"
 #include "Evento.h"
+#include "CampoCosmico.h"
+#include "AtaqueXenomorfo.h"
+#include "AtaquePiratas.h"
+#include "ChuvaMeteoritos.h"
+
 class Interacao {
 	Consola c;
 public:
@@ -13,10 +18,15 @@ public:
 	void Jogar();
 	void gerirEvento();
 	void Jogo_A_Iniciar();
+
+	
 	//int escreveIntegridade(int pos);
 private:
 	Jogo *jogo; //Ponteiro para poder aceder a classe jogo
 	bool jogo_criado;
 	void limpaParteDireita();
+	int opcaoEvento();
+	bool verificaExisteEvento(string e);
+	int posEvento(string e);
 };
 

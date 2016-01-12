@@ -37,7 +37,7 @@ public:
 	vector<Evento*> getEventos();
 	vector<Sala*> getSalas();
 	void addEvento(Evento* e);
-	bool sorteiaEvento();
+	//bool sorteiaEvento();
 	void verificaEstadoSala(Sala *s);
 	void mostraMensagens(string msg);
 	bool VerificaSalas();

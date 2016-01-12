@@ -6,8 +6,13 @@
 using namespace std;
 
 class ChuvaMeteoritos :public Evento {
+	string nome;
 public:
-	void danificaNave(Sala* s);
+	ChuvaMeteoritos(string n);
+
+	void danificaNave(Jogo* j);
+
+	string getNome();
 };
 
 #endif CHUVAMETEORITOS_H

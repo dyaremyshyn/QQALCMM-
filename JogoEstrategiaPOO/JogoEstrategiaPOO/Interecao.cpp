@@ -1,5 +1,5 @@
 #include "Interacao.h"
-#include "CampoCosmico.h"
+
 Interacao::Interacao()
 {
 		jogo_criado = false; //O jogador ainda nao iniciou o jogo
@@ -325,10 +325,10 @@ void Interacao::Jogar()
 		c.clrscr_comandline();
 		getline(cin, comando);
 		
-		if (jogo->sorteiaEvento()) {
+		/*if (jogo->sorteiaEvento()) {
 			c.gotoxy(65, 8);
 			cout << "                          ";
-		}
+		}*/
 
 		if (comando == "next") { // Validação para passar à próxima iteracção
 			jogo->turno(); //O utilizador não quer alterar nada, e avança no turno
@@ -369,11 +369,46 @@ void Interacao::limpaParteDireita()
 	
 }
 
-
+//Nesta função gerimos os eventos, e geriamos da seguinte forma:
+// 20% -> para não acontecer nada durante esse turno 
+//  5% -> para receber um ataque de xenomorfos
+// 10% -> para receber um ataque de piratas
+//
 void Interacao::gerirEvento() {
-	int nsalas = 3;
-	if (jogo->sorteiaEvento()){
-		jogo->addEvento(new CampoCosmico());
+	int op = opcaoEvento();
+	int i = 0;
+	switch (op) {
+	case 1 :
+		if(!verificaExisteEvento("AtaqueXenomorfo"))
+			jogo->addEvento(new AtaqueXenomorfo("AtaqueXenomorfo"));
+		i = posEvento(("AtaqueXenomorfo"));
+		(jogo->getEventos()[i])->danificaNave(jogo);
+		break;
+	case 2:
+		if (!verificaExisteEvento("AtaquePiratas"))
+			jogo->addEvento(new AtaquePiratas("AtaquePiratas"));
+		i = posEvento(("AtaquePiratas"));
+		(jogo->getEventos()[i])->danificaNave(jogo);
+		break;
+	case 3:
+		if (verificaExisteEvento("ChuvaMeteoritos"))
+			jogo->addEvento(new ChuvaMeteoritos("ChuvaMeteoritos"));
+		i = posEvento(("ChuvaMeteoritos"));
+		(jogo->getEventos()[i])->danificaNave(jogo);
+		break;
+	case 4:
+		if (!verificaExisteEvento("CampoCosmico"))
+			jogo->addEvento(new CampoCosmico("CampoCosmico"));
+		i = posEvento(("CampoCosmico"));
+		(jogo->getEventos()[i])->danificaNave(jogo);
+		break;
+	case 5:
+		break;
+	default:
+		break;
+	}
+
+		/*jogo->addEvento(new CampoCosmico());
 		for (int i = 0; i < jogo->getEventos().size(); i++) {
 			for (int j = 0; j < nsalas; j++) {
 				srand(time(NULL));
@@ -381,9 +416,42 @@ void Interacao::gerirEvento() {
 				(jogo->getEventos()[i])->danificaNave(jogo->getSalas()[r]);
 			}
 		}
-	}
+	}*/
 }
 
+int Interacao::opcaoEvento() {
+
+	srand(time(NULL));
+	int r = rand() % 100 + 0;
+	int op = 0;
+	
+	if (r <= 5) // ataque de xenomorfos
+		op = 1;
+	else if (r > 5 && r <= 15) // ataque de piratas
+		op = 2;
+	else if (r > 15 && r <= 35) // chuva de meteoritos
+		op = 3;
+	else if (r > 35 && r <= 65) // campo de pó cósmico
+		op = 4;
+	else if (r > 65) // não faz nada naquele turno
+		op = 5;
+
+	return op;
+}
+bool Interacao::verificaExisteEvento(string e) {
+
+	for (int i = 0; i < (jogo->getEventos()).size(); i++)
+		if (e == (jogo->getEventos())[i]->getNome())
+			return true;
+	return false;
+}
+int Interacao::posEvento(string e) {
+
+	for (int i = 0; i < (jogo->getEventos()).size(); i++)
+		if (e == (jogo->getEventos())[i]->getNome())
+			return i;
+
+}
 //int Interacao::escreveIntegridade(int pos) {
 //	return (jogo->getSalas()[pos])->getintegridade();
 //}

@@ -6,8 +6,12 @@
 using namespace std;
 
 class AtaqueXenomorfo :public Evento {
+	string nome;
 public:
-	void danificaNave(Sala* s);
+	AtaqueXenomorfo(string n);
+	void danificaNave(Jogo* j);
+
+	string getNome();
 };
 
 #endif ATAQUEXENOMORFO_H

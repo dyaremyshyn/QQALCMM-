@@ -5,8 +5,13 @@
 using namespace std;
 
 class CampoCosmico :public Evento {
+	string nome;
 public:
-	void danificaNave(Sala* s);
+	CampoCosmico(string n);
+
+	void danificaNave(Jogo* j);
+
+	string getNome();
 };
 
 #endif CAMPOCOSMICO_H

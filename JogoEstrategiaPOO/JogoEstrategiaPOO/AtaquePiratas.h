@@ -6,8 +6,13 @@
 using namespace std;
 
 class AtaquePiratas :public Evento {
+	string nome;
 public:
-	void danificaNave(Sala* s);
+	AtaquePiratas(string n);
+
+	void danificaNave(Jogo *j);
+
+	string getNome();
 };
 
 #endif ATAQUEPIRATAS_H

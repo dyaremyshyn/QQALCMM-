@@ -3,13 +3,14 @@
 
 #include "Libraries.h"
 #include "Sala.h"
-#include "Jogo.h"
+class Jogo;
 
 using namespace std;
 
 class Evento {
 public:
-	virtual void danificaNave(Sala* s) = 0;
+	virtual void danificaNave(Jogo *j) = 0;
+	virtual string getNome() = 0;
 };
 
 #endif EVENTO_H

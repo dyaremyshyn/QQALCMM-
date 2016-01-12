@@ -199,6 +199,7 @@ string Jogo::getTripulantes(int salai) const
 void Jogo::addEvento(Evento *e) {
 	eventos.push_back(e);
 }
+/*
 bool Jogo::sorteiaEvento() {
 	srand(time(NULL));
 	int r = rand() % 100 + 1;
@@ -206,7 +207,7 @@ bool Jogo::sorteiaEvento() {
 		return true;
 	return false;
 }
-
+*/
 vector<Evento*> Jogo::getEventos() {
 	return eventos;
 }
