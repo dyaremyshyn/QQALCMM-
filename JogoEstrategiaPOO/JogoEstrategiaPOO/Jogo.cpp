@@ -239,3 +239,70 @@ bool Jogo::guiaNave(Tripulante *a)
 		return true;
 	return false;
 }
+
+
+void Jogo::gerirDano(int dano, string e) { //recebemos o maior dano que um determinado evento proporciona e gerimos 
+
+	if (e == "ChuvaMeteoritos") { // para o caso da chuva de meteoritos o dano diminui
+		danoChuvaMeteoritos(dano);
+	}
+	else if (e == "outroEvento")
+		cout << "outroevento";
+	
+	
+}
+
+void Jogo::danoChuvaMeteoritos(int dano) {
+	int d = 0;
+
+	if (operaPonte()) 
+		dano -= 2;
+	d = dano + (rand() % (int)((dano * 2) - dano + 1));
+
+	if (existeRaioLaser()) {
+		if (operaRaioLaser()) {
+			for (int i = 0; i < d; i++) {
+				srand(time(NULL));
+				int prob = 0 + (rand() % (int)(100 - 0 + 1)); // valores aleatório entre 3 e 5
+
+				if (prob >= 50) { // o que acontece se alguém estiver a operar a sala Raio Laser ?!
+					d -= 1;
+				}
+			}
+		}
+	}
+
+	if (d > 0) {
+		for (int j = 0; j < d; j++) {
+			if(salas[6]->getintegridade()>0)
+				salas[6]->recebeDano(10);	// NÃO ESTÁ CORRETA A POSICAO DA SALA, ALTERAR!!!!!!!!!!!!!!!!!!!
+			else {
+				int x = 0 + (rand() % (int)(11 - 0 + 1));
+				salas[x]->recebeDano(10);
+				salas[x]->setOxigenio(0);
+			}
+		}
+	}
+
+}
+
+bool Jogo::existeRaioLaser() {
+	for (int j = 0; j < salas.size(); j++) // vê se temos algum raio laser na nave
+		if (salas[j]->getnome() == "Raio Laser")
+			return true;
+	return false;	
+}
+
+bool Jogo::operaPonte() {
+	for (int i = 0; i < tripulantes.size(); i++) 
+		if (tripulantes[i]->getOndeEstou()->getnome() == "Ponte") 
+			return true;
+	return false;
+}
+
+bool Jogo::operaRaioLaser() {
+	for (int i = 0; i < tripulantes.size(); i++) 
+		if (tripulantes[i]->getOndeEstou()->getnome() == "Raio Laser") 
+			return true;
+	return false;
+}

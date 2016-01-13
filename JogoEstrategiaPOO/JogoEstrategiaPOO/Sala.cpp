@@ -32,3 +32,11 @@ void Sala::setIntegridade(int valor)
 void Sala::recebeDano(int dano) {
 	integridade -= dano;
 }
+
+int Sala::getOxigenio() const {
+	return oxigenio;
+}
+
+void Sala::setOxigenio(int o) {
+	oxigenio = o;
+}

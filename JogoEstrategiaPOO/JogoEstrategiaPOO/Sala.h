@@ -13,6 +13,8 @@ private:
 public:
 	void reparSala(int vida);
 	int getintegridade() const;
+	int getOxigenio() const;
+	void setOxigenio(int o);
 	string getnome() const;
 	Sala(string n);
 	~Sala();

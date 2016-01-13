@@ -48,7 +48,11 @@ public:
 
 private:
 	bool chegouFim(int p);
-	
+	void gerirDano(int dano,string e); // terá que receber algo! 
+	bool existeRaioLaser();
+	bool operaPonte();
+	bool operaRaioLaser();
+	void danoChuvaMeteoritos(int dano);
 };
 
 #endif	/* MENU_H */
