@@ -1,7 +1,7 @@
 #ifndef EVENTO_H
 #define	EVENTO_H
 
-#include "Libraries.h"
+
 #include "Sala.h"
 class Jogo;
 

@@ -3,8 +3,8 @@
 class Enfermaria :public Sala
 {
 public:
-	Enfermaria() :Sala("Enfermaria") {};
-	~Enfermaria();
+	Enfermaria();
+	~Enfermaria() {};
 
 private:
 

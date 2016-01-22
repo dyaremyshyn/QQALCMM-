@@ -1,6 +1,4 @@
-#include <cstdlib>
-#include "Consola.h"
-#include "Jogo.h"
+#include "Libraries.h" 
 #include "Interacao.h"
 
 using namespace std;

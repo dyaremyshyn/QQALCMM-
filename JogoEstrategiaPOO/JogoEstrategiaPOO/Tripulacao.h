@@ -2,33 +2,23 @@
 #define	TRIPULANTE_H
 #include "Libraries.h"
 #include "Sala.h"
+
 class Sala;
 
-
-class Tripulante
+class Tripulante: public Unidades
 {
-	int vida;
-
-	   
-public:
-	Tripulante();
-	~Tripulante();
-	
-//	string getNome();
-//	void setNome(string n);
-
-//	int getPosicao();
-	//void setPosicao();
-	Sala * getOndeEstou();
-	void setOndeEstou(Sala *s);
-	string getNome();
-
-	void reparaDanos(Sala *a);
-	bool estouPonte(Sala *s);
 private:
 	static char contador;
-	string nome;
-	Sala * ondeEstou;
+public:
+	Tripulante():Unidades() {
+		setNome(incrementaid());
+	}
+	~Tripulante() {}
+	void reparaDanos(Sala *a);
+	bool estouPonte(Sala *s);
+	string incrementaid();
+
+	
 };
 
 

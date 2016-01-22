@@ -3,8 +3,8 @@
 class Suporte_Vida :public Sala
 {
 public:
-	Suporte_Vida() :Sala("Suporte Vida") {};
-	~Suporte_Vida();
+	Suporte_Vida();
+	~Suporte_Vida() {};
 
 private:
 

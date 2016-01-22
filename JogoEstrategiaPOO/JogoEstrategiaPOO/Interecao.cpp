@@ -183,11 +183,10 @@ void Interacao::MostraAmbienteGrafico()
 	{
 		c.gotoxy(x, y);
 		cout << jogo->getNomeSala(i);
-		if (jogo->VerificaTripulantesSeEstaEmSala()==true)
-		{
+			//Unidades que estao nesta sala
 			c.gotoxy(x, y + 1);
 			cout << jogo->getTripulantes(i);
-		}
+			//*****//
 		x = x + 20;
 		if (x == 86)
 		{
@@ -231,19 +230,17 @@ void Interacao::Jogo_A_Iniciar()
 	cout << "or -> Oficina Robotica";
 
 }
-
-
 void Interacao::Configurar_Nave() {
 	regex regex_pattern("[a-z][0-9]+");
-	Sala *pa = new Sala("Propulsor Adicional");
-	Sala *b = new Sala("Beliche");
-	Sala *rl = new Sala("Raio Laser");
-	Sala *ar = new Sala("Auto-Reparador");
-	Sala *ss = new Sala("Sistema Seguranca");
-	Sala *e = new Sala("Enfermaria");
-	Sala *sa = new Sala("Sala Armas");
-	Sala *ac = new Sala("Alojamento Capitao");
-	Sala *ofr = new Sala("Oficina Robotica");
+	Sala *pa = new Propulsor_Adicional;
+	Sala *b = new Beliche;
+	Sala *rl = new Raio_Laser;
+	Sala *ar = new Auto_Reparador;
+	Sala *ss = new Sistema_Seguranca;
+	Sala *e = new Enfermaria;
+	Sala *sa = new Sala_Armas;
+	Sala *ac = new Alojamento_Capitao;
+	Sala *ofr = new Oficina_Robotica;
 
 	while (1) {
 		c.gotoxy(120, 15);
@@ -313,7 +310,6 @@ void Interacao::Configurar_Nave() {
 
 	}
 }
-
 void Interacao::Jogar()
 {
 	limpaParteDireita();
@@ -324,11 +320,6 @@ void Interacao::Jogar()
 		string comando, cmd;
 		c.clrscr_comandline();
 		getline(cin, comando);
-		
-		/*if (jogo->sorteiaEvento()) {
-			c.gotoxy(65, 8);
-			cout << "                          ";
-		}*/
 
 		if (comando == "next") { // Validação para passar à próxima iteracção
 			jogo->turno(); //O utilizador não quer alterar nada, e avança no turno
@@ -346,7 +337,7 @@ void Interacao::Jogar()
 			//*******************************Comandos Relativos a controlo dos tripulantes************************************
 			if (regex_match(cmd, regex_pattern)) { //Mover tripulantes para salas, so aceita letra seguido de numero
 				jogo->Move(cmd);
-				for (int i = 0; i < jogo->getSalas().size(); i++)
+				for (unsigned int i = 0; i < jogo->getSalas().size(); i++)
 				jogo->turno(); //Depois de tomada a acção do utilizador, avança nos turnos
 				next();
 			}
@@ -354,7 +345,6 @@ void Interacao::Jogar()
 		gerirEvento();
 	}
 }
-
 void Interacao::limpaParteDireita()
 {
 	int i, j;
@@ -368,13 +358,14 @@ void Interacao::limpaParteDireita()
 	}
 	
 }
-
-//Nesta função gerimos os eventos, e geriamos da seguinte forma:
-// 20% -> para não acontecer nada durante esse turno 
-//  5% -> para receber um ataque de xenomorfos
-// 10% -> para receber um ataque de piratas
-//
 void Interacao::gerirEvento() {
+
+	//Nesta função gerimos os eventos, e geriamos da seguinte forma:
+	// 20% -> para não acontecer nada durante esse turno 
+	//  5% -> para receber um ataque de xenomorfos
+	// 10% -> para receber um ataque de piratas
+	//
+
 	int op = opcaoEvento();
 	int i = 0;
 	switch (op) {
@@ -418,7 +409,6 @@ void Interacao::gerirEvento() {
 		}
 	}*/
 }
-
 int Interacao::opcaoEvento() {
 
 	srand(time(NULL));
@@ -440,14 +430,14 @@ int Interacao::opcaoEvento() {
 }
 bool Interacao::verificaExisteEvento(string e) {
 
-	for (int i = 0; i < (jogo->getEventos()).size(); i++)
+	for (unsigned int i = 0; i < (jogo->getEventos()).size(); i++)
 		if (e == (jogo->getEventos())[i]->getNome())
 			return true;
 	return false;
 }
 int Interacao::posEvento(string e) {
 
-	for (int i = 0; i < (jogo->getEventos()).size(); i++)
+	for (unsigned int i = 0; i < (jogo->getEventos()).size(); i++)
 		if (e == (jogo->getEventos())[i]->getNome())
 			return i;
 

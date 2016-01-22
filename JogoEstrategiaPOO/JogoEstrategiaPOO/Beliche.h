@@ -3,8 +3,8 @@
 class Beliche :public Sala
 {
 public:
-	Beliche():Sala("Beliche") {};
-	~Beliche();
+	Beliche();
+	~Beliche() {};
 
 private:
 

@@ -3,8 +3,8 @@
 class Propulsor :public Sala
 {
 public:
-	Propulsor() :Sala("Propulsor") {};
-	~Propulsor();
+	Propulsor();
+	~Propulsor() {};
 
 private:
 

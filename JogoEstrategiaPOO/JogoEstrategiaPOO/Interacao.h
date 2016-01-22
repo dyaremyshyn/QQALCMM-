@@ -1,10 +1,26 @@
 #pragma once
-#include "Jogo.h"
+
 #include "Evento.h"
 #include "CampoCosmico.h"
 #include "AtaqueXenomorfo.h"
 #include "AtaquePiratas.h"
 #include "ChuvaMeteoritos.h"
+#include "Alojamento_Capitao.h"
+#include "Auto_Reparador.h"
+#include "Beliche.h"
+#include "Controlo_Escudo.h"
+#include "Oficina_Robotica.h"
+#include "Ponte.h"
+#include "Propulsor.h"
+#include "Propulsor_Adicional.h"
+#include "Raio_Laser.h"
+#include "Sala_Armas.h"
+#include "Sala_Maquinas.h"
+#include "Sistema_Seguranca_Interno.h"
+#include "Suporte_Vida.h"
+#include "Enfermaria.h"
+
+#include "Jogo.h"
 
 class Interacao {
 	Consola c;

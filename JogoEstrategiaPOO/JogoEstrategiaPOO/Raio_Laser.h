@@ -3,8 +3,8 @@
 class Raio_Laser :public Sala
 {
 public:
-	Raio_Laser() :Sala("Raio Laser") {};
-	~Raio_Laser();
+	Raio_Laser();
+	~Raio_Laser() {};
 
 private:
 

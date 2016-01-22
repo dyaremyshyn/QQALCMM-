@@ -2,27 +2,14 @@
 
 char Tripulante::contador = 'a';
 
-Tripulante::Tripulante()
+string Tripulante::incrementaid()
 {
-	nome = contador;
-	contador++;
-	vida = 100;
-}
-
-Tripulante::~Tripulante() {}
-
-string Tripulante::getNome()
-{
+	/*stringstream ss;*/
+	string nome(1,Tripulante::contador);
+	/*ss << Tripulante::contador;
+	ss >> nome;*/
+	Tripulante::contador++;
 	return nome;
-}
-void Tripulante::setOndeEstou(Sala *s)
-{
-	ondeEstou = s;
-}
-
-Sala * Tripulante::getOndeEstou()
-{
-	return ondeEstou;
 }
 
 void Tripulante::reparaDanos(Sala *a) {

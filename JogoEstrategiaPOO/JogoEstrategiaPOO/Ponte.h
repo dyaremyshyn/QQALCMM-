@@ -3,8 +3,8 @@
 class Ponte :public Sala
 {
 public:
-	Ponte():Sala("Ponte") {};
-	~Ponte();
+	Ponte();
+	~Ponte() {};
 
 private:
 
