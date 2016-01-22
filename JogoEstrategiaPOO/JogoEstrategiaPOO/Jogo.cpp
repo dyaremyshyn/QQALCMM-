@@ -1,6 +1,6 @@
 #include "Jogo.h"
 #include "Tripulacao.h"
-
+#include "Unidades.h"
 
 Jogo::Jogo(int d){
 	iteracao = 0;
@@ -30,10 +30,12 @@ Jogo::~Jogo(){
 
 void Jogo::PrimeirosTripulantes()
 {
+	Tripulante *t = new Tripulante();
 	for (int i = 0; i < 3; i++)
 	{
-		int	pos = rand() % 4 + 3;
-		salas[pos]->AdicionaUnidade(Tripulante());
+
+		int pos = 4 + (rand() % (int)(7 - 4 + 1));
+		salas[pos]->AdicionaUnidade(t);
 	}
 }
 

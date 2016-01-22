@@ -5,20 +5,17 @@ class Sala;
 
 class Caracteristicas;
 
-class Unidades
-{
+class Unidades {
+	string nome;
 public:
-	Unidades();
-	~Unidades();
-	Sala * getOndeEstou();
-	void setOndeEstou(Sala *s);
-	string getNome();
-	void setNome(string n);
+	virtual string getNome() = 0;
+
+	//virtual void setNome(string n) = 0;
 private:
 	//vector <Caracteristicas*> Caracteristicas;
-	string nome;
-	int vida;
-	Sala * ondeEstou;
+	//string nome;
+	//int vida;
+	//Sala * ondeEstou;
 
 };
 

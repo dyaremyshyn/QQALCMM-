@@ -28,12 +28,14 @@ bool Sala::VerificaExisteUnidade(string u)
 
 Unidades Sala::RemoveUnidade(string u)
 {
-	for (int i = 0; i < V_Unidades.size(); i++)
+	vector<Unidades*>::iterator it;
+
+	for (; i < V_Unidades.size(); i++)
 		if (V_Unidades[i]->getNome() == u)
 		{
-			Unidades un = *V_Unidades[i];
+			Unidades *un = V_Unidades[i];
 			delete V_Unidades[i];
-			return un;
+			return *un;
 		}
 }
 
@@ -53,9 +55,9 @@ bool Sala::guiaNave(Unidades *a)
 	return false;
 }
 
-void Sala::AdicionaUnidade(Unidades u)
+void Sala::AdicionaUnidade(Unidades *u)
 {
-	V_Unidades.push_back(&u);
+	V_Unidades.push_back(u);
 }
 
 int Sala::getintegridade() const

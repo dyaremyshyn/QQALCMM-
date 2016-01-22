@@ -2,15 +2,23 @@
 
 char Tripulante::contador = 'a';
 
-string Tripulante::incrementaid()
-{
-	/*stringstream ss;*/
-	string nome(1,Tripulante::contador);
-	/*ss << Tripulante::contador;
-	ss >> nome;*/
-	Tripulante::contador++;
-	return nome;
+//string Tripulante::incrementaid()
+//{
+//	/*stringstream ss;*/
+//	string nome(1,Tripulante::contador);
+//	/*ss << Tripulante::contador;
+//	ss >> nome;*/
+//	Tripulante::contador++;
+//	return nome;
+//}
+
+Tripulante::Tripulante() {
+	string n(1, contador);
+	nome = n;
+	contador++;
 }
+
+Tripulante::~Tripulante() {}
 
 void Tripulante::reparaDanos(Sala *a) {
 	if (a -> getintegridade() < 100)
@@ -22,3 +30,5 @@ bool Tripulante::estouPonte(Sala *s) {
 		return true;
 	return false;
 }
+
+string Tripulante::getNome() { return nome; }

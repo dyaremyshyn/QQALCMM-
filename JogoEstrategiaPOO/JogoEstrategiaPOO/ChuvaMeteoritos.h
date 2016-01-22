@@ -9,6 +9,7 @@ class ChuvaMeteoritos :public Evento {
 	string nome;
 public:
 	ChuvaMeteoritos(string n);
+	~ChuvaMeteoritos();
 
 	void danificaNave(Jogo* j);
 

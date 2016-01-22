@@ -5,23 +5,24 @@
 
 class Sala;
 
-class Tripulante: public Unidades
-{
+class Tripulante: public Unidades {
+	string nome;
+	int vida;
 private:
 	static char contador;
 public:
-	Tripulante():Unidades() {
+	/*Tripulante():Unidades() {
 		setNome(incrementaid());
-	}
-	~Tripulante() {}
+	}*/
+
+	Tripulante();
+	~Tripulante();
 	void reparaDanos(Sala *a);
 	bool estouPonte(Sala *s);
-	string incrementaid();
+	//string incrementaid();
 
-	
+	string getNome();
 };
-
-
 
 #endif	/* TRIPULANTE_H */
 

@@ -17,7 +17,7 @@ private:
 	vector <Unidades*> V_Unidades; //O jogador equipa as salas com diferentes tripulantes
 public:
 	bool guiaNave(Unidades *a);
-	void AdicionaUnidade(Unidades u);
+	void AdicionaUnidade(Unidades *u);
 	bool VerificaExisteUnidade(string u);
 	Unidades RemoveUnidade(string u);
 	void reparSala(int vida);

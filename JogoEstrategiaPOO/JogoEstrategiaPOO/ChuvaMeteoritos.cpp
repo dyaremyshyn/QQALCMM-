@@ -7,8 +7,6 @@ void ChuvaMeteoritos::danificaNave(Jogo* j) {
 	Consola c;
 	c.gotoxy(65, 8);
 	cout << "Chuva de Meteoritos!" << endl;
-	
-
 
 	//s->recebeDano(10);
 	c.gotoxy(65, 10);
@@ -16,6 +14,11 @@ void ChuvaMeteoritos::danificaNave(Jogo* j) {
 	//j->verificaEstadoSala(s); //verifica estado da sala; se integridade da sala correspondente for <=0 então nave rebenta, pára o jogo
 }
 
+
+ChuvaMeteoritos::~ChuvaMeteoritos(){
+
+
+}
 
 string ChuvaMeteoritos::getNome() {
 	return nome;
