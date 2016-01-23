@@ -3,6 +3,7 @@
 #include "Unidades.h"
 
 Jogo::Jogo(int d){
+	escudo = 100;
 	iteracao = 0;
 	percurso = 0;
 	dificuldade = d;
@@ -27,6 +28,9 @@ Jogo::~Jogo(){
 	for (unsigned int i = 0; i < eventos.size(); i++)
 		delete eventos[i];
 }
+
+int Jogo::getEscudo() {	return escudo; }
+void Jogo::setEscudo(int valor) { escudo = valor; }
 
 void Jogo::PrimeirosTripulantes()
 {
@@ -197,9 +201,15 @@ void Jogo::gerirDano(int dano, string e) { //recebemos o maior dano que um deter
 	if (e == "ChuvaMeteoritos") { // para o caso da chuva de meteoritos o dano diminui
 		danoChuvaMeteoritos(dano);
 	}
-	else if (e == "outroEvento")
-		cout << "outroevento";
-	
+	else if (e == "AtaquePiratas") {
+		danoAtaquePiratas(dano);
+	}
+	else if (e == "AtaqueXenomorfo") {
+		danoAtaqueXenomorfo(dano);
+	}
+	else if (e == "CampoCosmico") {
+		danoCampoCosmico(dano);
+	}
 	
 }
 void Jogo::danoChuvaMeteoritos(int dano) {
@@ -224,17 +234,64 @@ void Jogo::danoChuvaMeteoritos(int dano) {
 
 	if (d > 0) {
 		for (int j = 0; j < d; j++) {
-			if(salas[6]->getintegridade()>0)
-				salas[6]->recebeDano(10);	// NÃO ESTÁ CORRETA A POSICAO DA SALA, ALTERAR!!!!!!!!!!!!!!!!!!!
+			if(escudo > 0)
+				escudo-=10;	
 			else {
 				int x = 0 + (rand() % (int)(11 - 0 + 1));
 				salas[x]->recebeDano(10);
 				salas[x]->setOxigenio(0);
+				provocaBrecha();
 			}
 		}
 	}
 
 }
+
+void Jogo::danoAtaquePiratas(int dano) {
+	int dif = 0;
+	int i = 0;
+
+	if (escudo > dano)
+		escudo -= dano;
+	else {
+		dif = dano - escudo;
+		do {
+			srand(time(NULL));
+			i = 0 + (rand() % (int)(100 - 0 + 1)); // valores aleatório entre 3 e 5
+		} while (i == 6);
+		salas[i]->setIntegridade(salas[i]->getintegridade() - dif);
+		if (existeRaioLaser()) {
+			if (operaRaioLaser()) {
+				cout << "Dispara contra os Piratas!";
+			}
+			else
+				invasaoPiratas();
+		}
+		else 
+			invasaoPiratas();
+	}
+}
+void Jogo::invasaoPiratas() {
+	srand(time(NULL));
+	int x = 3 + (rand() % (int)(5 - 3 + 1)); // valores aleatório entre 3 e 5
+	int s = 0 + (rand() % (int)(11 - 0 + 1));
+
+	for (int i = 0; i < x; i++) {
+		salas[s]->AdicionaUnidade(new Pirata("Pirata"));
+	}
+}
+
+void Jogo::danoAtaqueXenomorfo(int dano) { }		// primeiro acabas as unidades!
+
+void Jogo::danoCampoCosmico(int dano) {
+	int x = 3 + (rand() % (int)(5 - 3 + 1)); // valores aleatório entre 3 e 5
+	for (int i = 0; i < x; i++) {
+		srand(time(NULL));
+		int y = 0 + (rand() % (int)(11 - 0 + 1)); // valores aleatório entre 3 e 5
+		salas[y]->recebeDano(10);
+	}
+}
+
 bool Jogo::existeRaioLaser() {
 	for (int j = 0; j < salas.size(); j++) // vê se temos algum raio laser na nave
 		if (salas[j]->getnome() == "Raio Laser")
@@ -242,11 +299,13 @@ bool Jogo::existeRaioLaser() {
 	return false;	
 }
 bool Jogo::operaPonte() {
+	if (salas[7]->guiaNave()) // poderá soferer alterações !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		return true;
+	return false;
 	/*for (int i = 0; i < tripulantes.size(); i++) 
 		if (tripulantes[i]->getOndeEstou()->getnome() == "Ponte") 
 			return true;
 	return false;*/
-	return true;
 }
 bool Jogo::operaRaioLaser() {
 	/*for (int i = 0; i < tripulantes.size(); i++) 
@@ -254,4 +313,9 @@ bool Jogo::operaRaioLaser() {
 			return true;
 	return false;*/
 	return true;
+}
+
+void Jogo::provocaBrecha()
+{
+	// criar uma brecha na nave (parte grafica)
 }

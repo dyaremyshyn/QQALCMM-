@@ -3,6 +3,7 @@
 #define	ATAQUEPIRATAS_H
 
 #include "Evento.h"
+#include "Jogo.h"
 using namespace std;
 
 class AtaquePiratas :public Evento {

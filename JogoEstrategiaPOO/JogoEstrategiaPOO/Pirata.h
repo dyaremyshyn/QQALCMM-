@@ -1,9 +1,9 @@
 #pragma once
 #include "Unidades.h"
-class Pirata :public Unidades
-{
+class Pirata :public Unidades {
+	string nome;
 public:
-	Pirata();
-	~Pirata() {};
-
+	Pirata(string n);
+	~Pirata();
+	string getNome();
 };

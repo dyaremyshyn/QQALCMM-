@@ -8,10 +8,9 @@ void AtaquePiratas::danificaNave(Jogo* j) {
 
 	c.gotoxy(65, 8);
 	cout << "Ataque de Piratas!" << endl;
-	//s->recebeDano(10);
-	c.gotoxy(65, 10);
-	//cout << s->getnome() << " recebeu dano." << endl;
-	//j->verificaEstadoSala(s); //verifica estado da sala; se integridade da sala correspondente for <=0 então nave rebenta, pára o jogo
+	
+	int d = 30 + (rand() % (int)(60 - 30 + 1));
+	j->gerirDano(d, nome);
 }
 
 string AtaquePiratas::getNome() {

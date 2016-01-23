@@ -3,7 +3,7 @@
 
 
 #include "Sala.h"
-class Jogo;
+#include "Jogo.h"
 
 using namespace std;
 

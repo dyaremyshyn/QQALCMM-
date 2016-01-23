@@ -2,7 +2,7 @@
 #define	MENU_H
 
 #include "Interacao.h"
-
+#include "Pirata.h"
 
 class Sala;
 class Evento;
@@ -18,10 +18,13 @@ class Jogo{
 	vector<Sala*> salas; //O jogador equipa a nave com diferentes salas
 	vector<Evento*> eventos;
 	int iteracao;
+	int escudo;
 
 public:
     Jogo(int d);
     ~Jogo();
+	int getEscudo();
+	void setEscudo(int valor);
 	void AdicionaSala(Sala *s);
 	void Move(string cmd);
 	void turno();
@@ -37,14 +40,19 @@ public:
 	string getTripulantes(int salai) const;
 	void PrimeirosTripulantes();
 	
-
+	void gerirDano(int dano, string e); // terá que receber algo! 
 private:
 	bool chegouFim(int p);
-	void gerirDano(int dano,string e); // terá que receber algo! 
 	bool existeRaioLaser();
 	bool operaPonte();
 	bool operaRaioLaser();
+	void provocaBrecha();
+
 	void danoChuvaMeteoritos(int dano);
+	void danoAtaquePiratas(int dano);
+	void danoAtaqueXenomorfo(int dano);
+	void danoCampoCosmico(int dano);
+	void invasaoPiratas();
 };
 
 #endif	/* MENU_H */

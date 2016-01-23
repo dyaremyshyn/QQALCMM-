@@ -3,6 +3,8 @@
 #define	CHUVAMETEORITOS_H
 
 #include "Evento.h"
+#include "Jogo.h"
+
 using namespace std;
 
 class ChuvaMeteoritos :public Evento {
@@ -11,7 +13,7 @@ public:
 	ChuvaMeteoritos(string n);
 	~ChuvaMeteoritos();
 
-	void danificaNave(Jogo* j);
+	void danificaNave(Jogo *j);
 
 	string getNome();
 };
