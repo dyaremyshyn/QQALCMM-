@@ -37,132 +37,27 @@
     <Filter Include="Source Files\Salas">
       <UniqueIdentifier>{758cbb8b-593f-465f-871b-906f045fa03a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Unidades\Tripulação">
+      <UniqueIdentifier>{afb4f40b-848b-4182-9610-d79563bc7099}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Unidades\Inimigos">
+      <UniqueIdentifier>{dda58cf1-6c0d-412c-943b-0d8625b4e871}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Unidades\Xenomorfos">
+      <UniqueIdentifier>{541c6e16-3812-4eaa-959e-588fbc31e0b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Nave">
+      <UniqueIdentifier>{c23a9036-fbbc-467a-971b-6c3c28ee69e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Nave">
+      <UniqueIdentifier>{362b2e14-a5b9-4f0e-8b2e-6316de9b0bd7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Armado.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Caracteristicas.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Casulo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Casulo_Geigermorfo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Combatente.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Consola.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Evento.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Flamejante.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Geigermorfo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Hipnotizador.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Indeciso.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Inimigo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Inimigos.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Interecao.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Jogo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MembroTripulacao.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Misterioso.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Move.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Mututis_Mutandis.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Mxyzypykwi.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Oficina_Robotica.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Operador.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Pirata.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Ponte.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Propulsor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Raio_Laser.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Regenerador.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Reparador.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Respira.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Robot.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Robotico.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Sala.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Sala_Armas.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Sala_Maquinas.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Sistema_Seguranca_Interno.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Suporte_Vida.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Toxico.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Tripulacao.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Unidades.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Xenomorfo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Xenomorfos.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Alojamento_Capitao.cpp">
@@ -186,42 +81,150 @@
     <ClCompile Include="ChuvaMeteoritos.cpp">
       <Filter>Source Files\Eventos</Filter>
     </ClCompile>
-    <ClCompile Include="Blob.cpp">
-      <Filter>Source Files\Unidades</Filter>
-    </ClCompile>
-    <ClCompile Include="Capitao.cpp">
-      <Filter>Source Files\Unidades</Filter>
-    </ClCompile>
-    <ClCompile Include="Exoesqueleto.cpp">
-      <Filter>Source Files\Unidades</Filter>
-    </ClCompile>
     <ClCompile Include="AtaqueXenomorfo.cpp">
       <Filter>Source Files\Eventos</Filter>
     </ClCompile>
     <ClCompile Include="CampoCosmico.cpp">
       <Filter>Source Files\Eventos</Filter>
     </ClCompile>
+    <ClCompile Include="Respira.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Flamejante.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Toxico.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Indeciso.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Misterioso.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Regenerador.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Robotico.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Reparador.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Combatente.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Xenomorfo.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Casulo.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Mututis_Mutandis.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Hipnotizador.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Operador.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Tripulacao.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Inimigo.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Move.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Armado.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Caracteristicas.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Evento.cpp">
+      <Filter>Source Files\Eventos</Filter>
+    </ClCompile>
+    <ClCompile Include="MembroTripulacao.cpp">
+      <Filter>Source Files\Unidades\Tripulação</Filter>
+    </ClCompile>
+    <ClCompile Include="Capitao.cpp">
+      <Filter>Source Files\Unidades\Tripulação</Filter>
+    </ClCompile>
+    <ClCompile Include="Robot.cpp">
+      <Filter>Source Files\Unidades\Tripulação</Filter>
+    </ClCompile>
+    <ClCompile Include="Pirata.cpp">
+      <Filter>Source Files\Unidades\Inimigos</Filter>
+    </ClCompile>
+    <ClCompile Include="Inimigos.cpp">
+      <Filter>Source Files\Unidades\Inimigos</Filter>
+    </ClCompile>
+    <ClCompile Include="Unidades.cpp">
+      <Filter>Source Files\Unidades</Filter>
+    </ClCompile>
+    <ClCompile Include="Geigermorfo.cpp">
+      <Filter>Source Files\Unidades\Xenomorfos</Filter>
+    </ClCompile>
+    <ClCompile Include="Casulo_Geigermorfo.cpp">
+      <Filter>Source Files\Unidades\Xenomorfos</Filter>
+    </ClCompile>
+    <ClCompile Include="Blob.cpp">
+      <Filter>Source Files\Unidades\Xenomorfos</Filter>
+    </ClCompile>
+    <ClCompile Include="Mxyzypykwi.cpp">
+      <Filter>Source Files\Unidades\Xenomorfos</Filter>
+    </ClCompile>
+    <ClCompile Include="Exoesqueleto.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Interecao.cpp">
+      <Filter>Source Files\Nave</Filter>
+    </ClCompile>
+    <ClCompile Include="Jogo.cpp">
+      <Filter>Source Files\Nave</Filter>
+    </ClCompile>
+    <ClCompile Include="Xenomorfos.cpp">
+      <Filter>Source Files\Unidades\Xenomorfos</Filter>
+    </ClCompile>
+    <ClCompile Include="Suporte_Vida.cpp">
+      <Filter>Source Files\Salas</Filter>
+    </ClCompile>
+    <ClCompile Include="Sistema_Seguranca_Interno.cpp">
+      <Filter>Source Files\Salas</Filter>
+    </ClCompile>
+    <ClCompile Include="Sala_Maquinas.cpp">
+      <Filter>Source Files\Salas</Filter>
+    </ClCompile>
+    <ClCompile Include="Sala_Armas.cpp">
+      <Filter>Source Files\Salas</Filter>
+    </ClCompile>
+    <ClCompile Include="Sala.cpp">
+      <Filter>Source Files\Salas</Filter>
+    </ClCompile>
+    <ClCompile Include="Raio_Laser.cpp">
+      <Filter>Source Files\Salas</Filter>
+    </ClCompile>
+    <ClCompile Include="Propulsor.cpp">
+      <Filter>Source Files\Salas</Filter>
+    </ClCompile>
+    <ClCompile Include="Ponte.cpp">
+      <Filter>Source Files\Salas</Filter>
+    </ClCompile>
+    <ClCompile Include="Oficina_Robotica.cpp">
+      <Filter>Source Files\Salas</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Consola.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Interacao.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Jogo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Libraries.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Armado.h">
-      <Filter>Header Files\Caractristicas</Filter>
-    </ClInclude>
-    <ClInclude Include="AtaquePiratas.h">
-      <Filter>Header Files\Caractristicas</Filter>
-    </ClInclude>
-    <ClInclude Include="AtaqueXenomorfo.h">
       <Filter>Header Files\Caractristicas</Filter>
     </ClInclude>
     <ClInclude Include="Alojamento_Capitao.h">
@@ -364,6 +367,18 @@
     </ClInclude>
     <ClInclude Include="Xenomorfos.h">
       <Filter>Header Files\Unidades</Filter>
+    </ClInclude>
+    <ClInclude Include="AtaquePiratas.h">
+      <Filter>Header Files\Eventos</Filter>
+    </ClInclude>
+    <ClInclude Include="AtaqueXenomorfo.h">
+      <Filter>Header Files\Eventos</Filter>
+    </ClInclude>
+    <ClInclude Include="Jogo.h">
+      <Filter>Header Files\Nave</Filter>
+    </ClInclude>
+    <ClInclude Include="Interacao.h">
+      <Filter>Header Files\Nave</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
