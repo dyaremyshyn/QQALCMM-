@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Alojamento_Capitao.cpp" />
+    <ClCompile Include="Armado.cpp" />
     <ClCompile Include="AtaquePiratas.cpp" />
     <ClCompile Include="AtaqueXenomorfo.cpp" />
     <ClCompile Include="Auto_Reparador.cpp" />
@@ -20,32 +21,49 @@
     <ClCompile Include="CampoCosmico.cpp" />
     <ClCompile Include="Capitao.cpp" />
     <ClCompile Include="Caracteristicas.cpp" />
+    <ClCompile Include="Casulo.cpp" />
     <ClCompile Include="Casulo_Geigermorfo.cpp" />
     <ClCompile Include="ChuvaMeteoritos.cpp" />
+    <ClCompile Include="Combatente.cpp" />
     <ClCompile Include="Consola.cpp" />
     <ClCompile Include="Controlo_Escudo.cpp" />
     <ClCompile Include="Enfermaria.cpp" />
     <ClCompile Include="Evento.cpp" />
+    <ClCompile Include="Exoesqueleto.cpp" />
+    <ClCompile Include="Flamejante.cpp" />
     <ClCompile Include="Geigermorfo.cpp" />
+    <ClCompile Include="Hipnotizador.cpp" />
+    <ClCompile Include="Indeciso.cpp" />
+    <ClCompile Include="Inimigo.cpp" />
     <ClCompile Include="Inimigos.cpp" />
     <ClCompile Include="Interecao.cpp" />
     <ClCompile Include="Jogo.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MembroTripulacao.cpp" />
+    <ClCompile Include="Misterioso.cpp" />
+    <ClCompile Include="Move.cpp" />
+    <ClCompile Include="Mututis_Mutandis.cpp" />
     <ClCompile Include="Mxyzypykwi.cpp" />
     <ClCompile Include="Oficina_Robotica.cpp" />
+    <ClCompile Include="Operador.cpp" />
     <ClCompile Include="Pirata.cpp" />
     <ClCompile Include="Ponte.cpp" />
     <ClCompile Include="Propulsor.cpp" />
-    <ClCompile Include="Propulsor_Adicional.cpp" />
     <ClCompile Include="Raio_Laser.cpp" />
+    <ClCompile Include="Regenerador.cpp" />
+    <ClCompile Include="Reparador.cpp" />
+    <ClCompile Include="Respira.cpp" />
     <ClCompile Include="Robot.cpp" />
+    <ClCompile Include="Robotico.cpp" />
     <ClCompile Include="Sala.cpp" />
     <ClCompile Include="Sala_Armas.cpp" />
     <ClCompile Include="Sala_Maquinas.cpp" />
     <ClCompile Include="Sistema_Seguranca_Interno.cpp" />
     <ClCompile Include="Suporte_Vida.cpp" />
+    <ClCompile Include="Toxico.cpp" />
     <ClCompile Include="Tripulacao.cpp" />
     <ClCompile Include="Unidades.cpp" />
+    <ClCompile Include="Xenomorfo.cpp" />
     <ClCompile Include="Xenomorfos.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -87,7 +105,6 @@
     <ClInclude Include="Pirata.h" />
     <ClInclude Include="Ponte.h" />
     <ClInclude Include="Propulsor.h" />
-    <ClInclude Include="Propulsor_Adicional.h" />
     <ClInclude Include="Raio_Laser.h" />
     <ClInclude Include="Regenerador.h" />
     <ClInclude Include="Reparador.h" />

@@ -1,5 +1,5 @@
 #include "Tripulacao.h"
-
+#include "MembroTripulacao.h"
 char Tripulante::contador = 'a';
 
 //string Tripulante::incrementaid()
@@ -16,6 +16,7 @@ Tripulante::Tripulante() {
 	string n(1, contador);
 	nome = n;
 	contador++;
+	u->GanhaCaracteristica(new MembroTripulacao);
 }
 
 Tripulante::~Tripulante() {}
@@ -29,6 +30,11 @@ bool Tripulante::estouPonte(Sala *s) {
 	if (s->getnome() == "Ponte")
 		return true;
 	return false;
+}
+
+void Tripulante::setOndeEstou(Sala * s)
+{
+	ondeEstou = s;
 }
 
 string Tripulante::getNome() { return nome; }

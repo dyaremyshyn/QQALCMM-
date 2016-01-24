@@ -34,6 +34,9 @@
     <Filter Include="Header Files\Caracteristicas">
       <UniqueIdentifier>{88cd4951-1cc1-487c-8a69-d63654b1e555}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Caracteristicas">
+      <UniqueIdentifier>{c451a689-b896-431c-bdd0-c1a35dc47624}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Consola.cpp">
@@ -85,9 +88,6 @@
       <Filter>Source Files\Salas</Filter>
     </ClCompile>
     <ClCompile Include="Propulsor.cpp">
-      <Filter>Source Files\Salas</Filter>
-    </ClCompile>
-    <ClCompile Include="Propulsor_Adicional.cpp">
       <Filter>Source Files\Salas</Filter>
     </ClCompile>
     <ClCompile Include="Raio_Laser.cpp">
@@ -144,6 +144,63 @@
     <ClCompile Include="Blob.cpp">
       <Filter>Source Files\Unidades</Filter>
     </ClCompile>
+    <ClCompile Include="Xenomorfo.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Toxico.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Robotico.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Respira.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Reparador.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Regenerador.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Operador.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Mututis_Mutandis.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Move.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="MembroTripulacao.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Misterioso.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Inimigo.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Indeciso.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Hipnotizador.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Flamejante.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Exoesqueleto.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Combatente.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Casulo.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Armado.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Consola.h">
@@ -165,9 +222,6 @@
       <Filter>Header Files\Salas</Filter>
     </ClInclude>
     <ClInclude Include="Ponte.h">
-      <Filter>Header Files\Salas</Filter>
-    </ClInclude>
-    <ClInclude Include="Propulsor_Adicional.h">
       <Filter>Header Files\Salas</Filter>
     </ClInclude>
     <ClInclude Include="Raio_Laser.h">

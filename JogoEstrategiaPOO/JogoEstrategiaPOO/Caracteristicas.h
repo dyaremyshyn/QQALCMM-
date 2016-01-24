@@ -5,8 +5,8 @@ class Caracteristicas
 public:
 	Caracteristicas();
 	~Caracteristicas();
-
+	string getnome();
 private:
-
+	string nome;
 };
 

@@ -30,15 +30,30 @@ Jogo::~Jogo(){
 
 void Jogo::PrimeirosTripulantes()
 {
-	Tripulante *t = new Tripulante();
 	for (int i = 0; i < 3; i++)
 	{
-
+		Tripulante *t = new Tripulante;
 		int pos = 4 + (rand() % (int)(7 - 4 + 1));
 		salas[pos]->AdicionaUnidade(t);
 	}
 }
 
+bool Jogo::VerificaExisteSala(string nome_sala)
+{
+	for (int i = 0; i < salas.size(); i++)
+	{
+		if (salas[i]->getnome() == nome_sala)
+			return true;
+	}
+	return false;
+}
+
+bool Jogo::VerificaExisteTripulantes(int pos)
+{
+	if (salas[pos]->getTripulantes())
+		return true;
+
+}
 void Jogo::AdicionaSala(Sala *s) {
 	for (int i = 0; i < salas.size(); i++) {
 		if (salas[i]->getnome() == "Alojamento Capitao")          //So pode existir uma sala para alijar o capitao
@@ -138,14 +153,14 @@ void Jogo::turno()
 }
 void Jogo::TripulantesDisponiveis()
 {
-	int j=16;
+	/*int j=16;
 	for (unsigned int i = 0; i < salas.size(); i++)
 	{
 		c.gotoxy(120, j);
 		cout << salas[i]->getUnidades();
 		j++;
 	
-	}
+	}*/
 }
 vector<Sala*> Jogo::getSalas() {
 	return salas;

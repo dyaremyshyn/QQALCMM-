@@ -10,12 +10,22 @@ Sala::Sala()
 Sala::~Sala() {
 }
 
-string Sala::getUnidades() const
+string Sala::getNomeUnidades() const
 {
 	ostringstream oss;
 	for (int i = 0; i < V_Unidades.size(); i++)
 		oss << V_Unidades[i]->getNome() << " ";
 	return oss.str();
+}
+
+vector<Sala*> Sala::getSalasAdjacentes()
+{
+	return SalasAdjacentes;
+}
+
+vector<Unidades*> Sala::getUnidades()
+{
+	return V_Unidades;
 }
 
 bool Sala::VerificaExisteUnidade(string u)
@@ -26,16 +36,23 @@ bool Sala::VerificaExisteUnidade(string u)
 	return false;
 }
 
-Unidades Sala::RemoveUnidade(string u)
+bool Sala::getTripulantes()
 {
-	vector<Unidades*>::iterator it;
+	for (int i = 0; i < V_Unidades.size(); i++)
+		for (int j = 0; i < V_Unidades[i]->getCaracteristicas().size(); i++)
+			if (V_Unidades[i]->getCaracteristicas()[j]->getnome() == "Tripulante")
+				return true;
+	return false;
+}
 
-	for (; i < V_Unidades.size(); i++)
+Unidades* Sala::RemoveUnidade(string u)
+{
+	for (int i=0; i < V_Unidades.size(); i++)
 		if (V_Unidades[i]->getNome() == u)
 		{
 			Unidades *un = V_Unidades[i];
 			delete V_Unidades[i];
-			return *un;
+			return un;
 		}
 }
 
@@ -48,16 +65,11 @@ void Sala::setNome(string n)
 	nome = n;
 }
 
-bool Sala::guiaNave(Unidades *a)
-{
-	if (a != NULL)
-		return true;
-	return false;
-}
-
 void Sala::AdicionaUnidade(Unidades *u)
 {
 	V_Unidades.push_back(u);
+	n_unidades++;
+	u->setOndeEstou(this);
 }
 
 int Sala::getintegridade() const

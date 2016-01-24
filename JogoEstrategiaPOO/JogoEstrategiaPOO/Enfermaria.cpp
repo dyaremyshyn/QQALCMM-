@@ -4,3 +4,8 @@ Enfermaria::Enfermaria()
 {
 	setNome("Enfermaria");
 }
+
+void Enfermaria::faz_acao()
+{
+	getUnidades
+}

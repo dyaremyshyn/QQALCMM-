@@ -7,5 +7,5 @@ public:
 	~Sala_Armas() {};
 
 private:
-
+	void FimTurnoSala();
 };

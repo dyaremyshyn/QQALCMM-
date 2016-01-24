@@ -1,5 +1,6 @@
 #pragma once
 #include "Sala.h"
+#include "Jogo.h"
 class Suporte_Vida :public Sala
 {
 public:
@@ -7,5 +8,5 @@ public:
 	~Suporte_Vida() {};
 
 private:
-
+	void atribuioxigenio(Jogo *j);
 };

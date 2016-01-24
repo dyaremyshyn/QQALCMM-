@@ -7,5 +7,5 @@ public:
 	~Auto_Reparador() {};
 
 private:
-
+	void faz_acao();
 };

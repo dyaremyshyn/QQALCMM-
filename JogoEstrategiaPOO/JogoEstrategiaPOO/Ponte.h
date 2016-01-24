@@ -6,6 +6,7 @@ public:
 	Ponte();
 	~Ponte() {};
 
-private:
+	bool guiaNave();
 
+private:
 };

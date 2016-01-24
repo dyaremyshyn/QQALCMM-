@@ -4,3 +4,8 @@ Ponte::Ponte()
 {
 	setNome("Ponte");
 }
+
+bool Ponte::guiaNave()
+{
+	
+}

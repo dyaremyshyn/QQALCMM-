@@ -7,5 +7,5 @@ public:
 	~Enfermaria() {};
 
 private:
-
+	void faz_acao();
 };

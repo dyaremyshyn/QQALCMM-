@@ -1,593 +1,130 @@
-﻿  Tripulacao.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Jogo.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(36): error C2259: 'Tripulante': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(36): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(36): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(36): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(36): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(36): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(41): warning C4018: '<': signed/unsigned mismatch
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(79): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(79): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(79): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(79): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(79): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(79): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(213): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.cpp(237): warning C4018: '<': signed/unsigned mismatch
-  ChuvaMeteoritos.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Generating Code...
-  Compiling...
-  Alojamento_Capitao.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Generating Code...
-  Compiling...
-  AtaquePiratas.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Generating Code...
-  Compiling...
-  AtaqueXenomorfo.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Generating Code...
-  Compiling...
-  Auto_Reparador.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Generating Code...
-  Compiling...
-  Beliche.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Generating Code...
-  Compiling...
-  Blob.cpp
-  Generating Code...
-  Compiling...
-  main.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Xenomorfos.cpp
-  Unidades.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.cpp(5): error C2600: 'Unidades::Unidades': cannot define a compiler-generated special member function (must be declared in the class first)
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.cpp(10): error C2600: 'Unidades::~Unidades': cannot define a compiler-generated special member function (must be declared in the class first)
-  Suporte_Vida.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Sistema_Seguranca_Interno.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Sala_Maquinas.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Sala_Armas.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Sala.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(16): warning C4018: '<': signed/unsigned mismatch
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(23): warning C4018: '<': signed/unsigned mismatch
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(30): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(30): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(30): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(30): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(30): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(30): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(31): warning C4018: '<': signed/unsigned mismatch
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(34): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(34): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(34): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(34): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(34): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(34): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(56): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(56): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(56): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(56): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(56): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(56): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Robot.cpp
-  Raio_Laser.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Propulsor_Adicional.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Propulsor.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Ponte.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Pirata.cpp
-  Oficina_Robotica.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Mxyzypykwi.cpp
-  Interecao.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\interecao.cpp(414): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Inimigos.cpp
-  Geigermorfo.cpp
-  Evento.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Generating Code...
-  Compiling...
-  Enfermaria.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Controlo_Escudo.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-  Casulo_Geigermorfo.cpp
-  Caracteristicas.cpp
-  Capitao.cpp
-  CampoCosmico.cpp
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(20): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): error C2259: 'Unidades': cannot instantiate abstract class
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: due to following members:
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'Sala *Unidades::getOndeEstou(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(10): note: see declaration of 'Unidades::getOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setOndeEstou(Sala *)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(11): note: see declaration of 'Unidades::setOndeEstou'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'std::string Unidades::getNome(void)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(12): note: see declaration of 'Unidades::getNome'
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(22): note: 'void Unidades::setNome(std::string)': is abstract
-  c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(13): note: see declaration of 'Unidades::setNome'
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\campocosmico.cpp(11): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\dmytro yaremyshyn\desktop\qqalcmm-\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\campocosmico.cpp(18): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Generating Code...
+﻿Build started 23/01/2016 20:36:48.
+     1>Project "C:\Users\Pedro Camacho\Documents\GitHub\QQALCMM-\JogoEstrategiaPOO\JogoEstrategiaPOO\JogoEstrategiaPOO.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Alojamento_Capitao.cpp AtaquePiratas.cpp AtaqueXenomorfo.cpp Auto_Reparador.cpp Beliche.cpp Blob.cpp CampoCosmico.cpp Capitao.cpp Caracteristicas.cpp Casulo_Geigermorfo.cpp ChuvaMeteoritos.cpp Consola.cpp Controlo_Escudo.cpp Enfermaria.cpp Evento.cpp Geigermorfo.cpp Inimigos.cpp Interecao.cpp Jogo.cpp main.cpp Mxyzypykwi.cpp Oficina_Robotica.cpp Pirata.cpp Ponte.cpp Propulsor.cpp Raio_Laser.cpp Robot.cpp Sala.cpp Sala_Armas.cpp Sala_Maquinas.cpp Sistema_Seguranca_Interno.cpp Suporte_Vida.cpp Tripulacao.cpp Unidades.cpp Xenomorfos.cpp
+         Xenomorfos.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\xenomorfos.cpp : fatal error C1041: cannot open program database 'C:\Users\Pedro Camacho\Documents\GitHub\QQALCMM-\JogoEstrategiaPOO\JogoEstrategiaPOO\Debug\vc140.idb'; if multiple CL.EXE write to the same .PDB file, please use /FS
+         Unidades.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Tripulacao.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Suporte_Vida.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\interacao.h(15): fatal error C1083: Cannot open include file: 'Propulsor_Adicional.h': No such file or directory
+         Sistema_Seguranca_Interno.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Sala_Maquinas.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala_maquinas.cpp : fatal error C1041: cannot open program database 'C:\Users\Pedro Camacho\Documents\GitHub\QQALCMM-\JogoEstrategiaPOO\JogoEstrategiaPOO\Debug\vc140.idb'; if multiple CL.EXE write to the same .PDB file, please use /FS
+         Sala_Armas.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Sala.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(4): error C2084: function 'Sala::Sala(void)' already has a body
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.h(28): note: see previous definition of '{ctor}'
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(16): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(28): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(36): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\sala.cpp(73): error C2065: 'id': undeclared identifier
+         Robot.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Raio_Laser.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Propulsor.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Ponte.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Pirata.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Oficina_Robotica.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Mxyzypykwi.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         main.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.h(39): error C2065: 'escudo': undeclared identifier
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.h(40): error C2065: 'escudo': undeclared identifier
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\interacao.h(15): fatal error C1083: Cannot open include file: 'Propulsor_Adicional.h': No such file or directory
+         Jogo.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\interacao.h(15): fatal error C1083: Cannot open include file: 'Propulsor_Adicional.h': No such file or directory
+         Interecao.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.h(39): error C2065: 'escudo': undeclared identifier
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\jogo.h(40): error C2065: 'escudo': undeclared identifier
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\interacao.h(15): fatal error C1083: Cannot open include file: 'Propulsor_Adicional.h': No such file or directory
+         Inimigos.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Geigermorfo.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Generating Code...
+         Compiling...
+         Evento.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Enfermaria.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Controlo_Escudo.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\interacao.h(15): fatal error C1083: Cannot open include file: 'Propulsor_Adicional.h': No such file or directory
+         Consola.cpp
+         ChuvaMeteoritos.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Casulo_Geigermorfo.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Caracteristicas.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Capitao.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         CampoCosmico.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\interacao.h(15): fatal error C1083: Cannot open include file: 'Propulsor_Adicional.h': No such file or directory
+         Blob.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Beliche.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Auto_Reparador.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\auto_reparador.cpp(12): warning C4018: '<': signed/unsigned mismatch
+         AtaqueXenomorfo.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         AtaquePiratas.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Alojamento_Capitao.cpp
+     1>c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(16): error C2086: 'std::string Unidades::nome': redefinition
+         c:\users\pedro camacho\documents\github\qqalcmm-\jogoestrategiapoo\jogoestrategiapoo\unidades.h(9): note: see declaration of 'Unidades::nome'
+         Generating Code...
+     1>Done Building Project "C:\Users\Pedro Camacho\Documents\GitHub\QQALCMM-\JogoEstrategiaPOO\JogoEstrategiaPOO\JogoEstrategiaPOO.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:28.35

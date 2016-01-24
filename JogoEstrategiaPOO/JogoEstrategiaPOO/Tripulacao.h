@@ -10,17 +10,14 @@ class Tripulante: public Unidades {
 	int vida;
 private:
 	static char contador;
+	Sala * ondeEstou;
 public:
-	/*Tripulante():Unidades() {
-		setNome(incrementaid());
-	}*/
-
 	Tripulante();
 	~Tripulante();
 	void reparaDanos(Sala *a);
 	bool estouPonte(Sala *s);
 	//string incrementaid();
-
+	void setOndeEstou(Sala *s);
 	string getNome();
 };
 

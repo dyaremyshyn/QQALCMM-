@@ -7,5 +7,5 @@ public:
 	~Sistema_Seguranca() {};
 
 private:
-
+	void faz_acao();
 };

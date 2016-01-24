@@ -9,30 +9,31 @@ using namespace std;
 class Sala{
 private:
     string nome;
-	int id;
-    int oxigenio;
-	int integridade;
-	int escudo;
-	bool escudoativo;
+	int local;
+    int oxigenio, integridade;
+	int n_unidades;
 	vector <Unidades*> V_Unidades; //O jogador equipa as salas com diferentes tripulantes
+	//vector <EfeotpsAmbientais*> Efeitos;
+	vector <Sala *> SalasAdjacentes;
 public:
-	bool guiaNave(Unidades *a);
 	void AdicionaUnidade(Unidades *u);
 	bool VerificaExisteUnidade(string u);
-	Unidades RemoveUnidade(string u);
+	bool getTripulantes();
+	Unidades* RemoveUnidade(string u);
 	void reparSala(int vida);
 	int getintegridade() const;
 	int getOxigenio() const;
 	void setOxigenio(int o);
 	string getnome() const;
 	int getid() const;
-	Sala();
+	Sala():integridade(100),oxigenio(100),n_unidades(0) {};
 	~Sala();
 	void setIntegridade(int vida);
 	void recebeDano(int dano);
-	void Primeiros_Tripulantes();
 	void setNome(string n);
-	string getUnidades() const;
+	string getNomeUnidades() const;
+	vector<Sala*> getSalasAdjacentes();
+	vector<Unidades*> getUnidades();
 };
 
 #endif	/* SALA_H */

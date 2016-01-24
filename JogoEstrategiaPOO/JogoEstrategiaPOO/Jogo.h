@@ -36,8 +36,8 @@ public:
 	string getNomeSala(int id) const;
 	string getTripulantes(int salai) const;
 	void PrimeirosTripulantes();
-	
-
+	bool VerificaExisteSala(string nome_sala);
+	bool VerificaExisteTripulantes(int pos);
 private:
 	bool chegouFim(int p);
 	void gerirDano(int dano,string e); // terá que receber algo! 
