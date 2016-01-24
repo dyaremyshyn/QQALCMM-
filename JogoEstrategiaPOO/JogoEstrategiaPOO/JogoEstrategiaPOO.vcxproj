@@ -29,20 +29,30 @@
     <ClCompile Include="Controlo_Escudo.cpp" />
     <ClCompile Include="Enfermaria.cpp" />
     <ClCompile Include="Evento.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="Exoesqueleto.cpp" />
     <ClCompile Include="Flamejante.cpp" />
     <ClCompile Include="Geigermorfo.cpp" />
     <ClCompile Include="Hipnotizador.cpp" />
     <ClCompile Include="Indeciso.cpp" />
     <ClCompile Include="Inimigo.cpp" />
+=======
+    <ClCompile Include="Flamejante.cpp" />
+    <ClCompile Include="Geigermorfo.cpp" />
+    <ClCompile Include="Indeciso.cpp" />
+>>>>>>> origin/master
     <ClCompile Include="Inimigos.cpp" />
     <ClCompile Include="Interecao.cpp" />
     <ClCompile Include="Jogo.cpp" />
     <ClCompile Include="main.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="MembroTripulacao.cpp" />
     <ClCompile Include="Misterioso.cpp" />
     <ClCompile Include="Move.cpp" />
     <ClCompile Include="Mututis_Mutandis.cpp" />
+=======
+    <ClCompile Include="Misterioso.cpp" />
+>>>>>>> origin/master
     <ClCompile Include="Mxyzypykwi.cpp" />
     <ClCompile Include="Oficina_Robotica.cpp" />
     <ClCompile Include="Operador.cpp" />
@@ -51,7 +61,10 @@
     <ClCompile Include="Propulsor.cpp" />
     <ClCompile Include="Raio_Laser.cpp" />
     <ClCompile Include="Regenerador.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="Reparador.cpp" />
+=======
+>>>>>>> origin/master
     <ClCompile Include="Respira.cpp" />
     <ClCompile Include="Robot.cpp" />
     <ClCompile Include="Robotico.cpp" />

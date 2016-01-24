@@ -35,7 +35,11 @@
       <UniqueIdentifier>{88cd4951-1cc1-487c-8a69-d63654b1e555}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Caracteristicas">
+<<<<<<< HEAD
       <UniqueIdentifier>{c451a689-b896-431c-bdd0-c1a35dc47624}</UniqueIdentifier>
+=======
+      <UniqueIdentifier>{209f4353-8581-4dc9-8c29-4cc6827189f7}</UniqueIdentifier>
+>>>>>>> origin/master
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +148,7 @@
     <ClCompile Include="Blob.cpp">
       <Filter>Source Files\Unidades</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="Xenomorfo.cpp">
       <Filter>Source Files\Caracteristicas</Filter>
     </ClCompile>
@@ -199,6 +204,24 @@
       <Filter>Source Files\Caracteristicas</Filter>
     </ClCompile>
     <ClCompile Include="Armado.cpp">
+=======
+    <ClCompile Include="Respira.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Flamejante.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Toxico.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Indeciso.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Misterioso.cpp">
+      <Filter>Source Files\Caracteristicas</Filter>
+    </ClCompile>
+    <ClCompile Include="Regenerador.cpp">
+>>>>>>> origin/master
       <Filter>Source Files\Caracteristicas</Filter>
     </ClCompile>
   </ItemGroup>

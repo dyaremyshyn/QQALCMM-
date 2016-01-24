@@ -3,6 +3,7 @@
 #define	ATAQUEXENOMORFO_H
 
 #include "Evento.h"
+#include "Jogo.h"
 using namespace std;
 
 class AtaqueXenomorfo :public Evento {
