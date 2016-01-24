@@ -1,7 +1,6 @@
 #pragma once
 #include "Caracteristicas.h"
-class Xenomorfo :public Caracteristicas
-{
+class Xenomorfo :public Caracteristicas {
 
 public:
 	Xenomorfo();

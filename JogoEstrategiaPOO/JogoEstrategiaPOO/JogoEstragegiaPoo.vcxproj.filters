@@ -52,6 +52,15 @@
     <Filter Include="Header Files\Nave">
       <UniqueIdentifier>{362b2e14-a5b9-4f0e-8b2e-6316de9b0bd7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Unidades\Tripulação">
+      <UniqueIdentifier>{84c81ce0-9311-4f91-a23a-33de1c9c76ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Unidades\Xenomorfo">
+      <UniqueIdentifier>{0f95fbdf-80a9-41a0-a64d-6583f6becee1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Unidades\Inimigos">
+      <UniqueIdentifier>{4880e858-add6-49d4-a8d2-13031130c14d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Consola.cpp">
@@ -127,9 +136,6 @@
       <Filter>Source Files\Caracteristicas</Filter>
     </ClCompile>
     <ClCompile Include="Operador.cpp">
-      <Filter>Source Files\Caracteristicas</Filter>
-    </ClCompile>
-    <ClCompile Include="Tripulacao.cpp">
       <Filter>Source Files\Caracteristicas</Filter>
     </ClCompile>
     <ClCompile Include="Inimigo.cpp">
@@ -216,6 +222,9 @@
     <ClCompile Include="Oficina_Robotica.cpp">
       <Filter>Source Files\Salas</Filter>
     </ClCompile>
+    <ClCompile Include="Tripulacao.cpp">
+      <Filter>Source Files\Unidades\Tripulação</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Consola.h">
@@ -239,37 +248,13 @@
     <ClInclude Include="CampoCosmico.h">
       <Filter>Header Files\Eventos</Filter>
     </ClInclude>
-    <ClInclude Include="Blob.h">
-      <Filter>Header Files\Unidades</Filter>
-    </ClInclude>
-    <ClInclude Include="Capitao.h">
-      <Filter>Header Files\Unidades</Filter>
-    </ClInclude>
     <ClInclude Include="Caracteristicas.h">
       <Filter>Header Files\Caractristicas</Filter>
-    </ClInclude>
-    <ClInclude Include="Casulo.h">
-      <Filter>Header Files\Unidades</Filter>
-    </ClInclude>
-    <ClInclude Include="Casulo_Geigermorfo.h">
-      <Filter>Header Files\Unidades</Filter>
     </ClInclude>
     <ClInclude Include="ChuvaMeteoritos.h">
       <Filter>Header Files\Eventos</Filter>
     </ClInclude>
     <ClInclude Include="Unidades.h">
-      <Filter>Header Files\Unidades</Filter>
-    </ClInclude>
-    <ClInclude Include="Tripulacao.h">
-      <Filter>Header Files\Unidades</Filter>
-    </ClInclude>
-    <ClInclude Include="Robot.h">
-      <Filter>Header Files\Unidades</Filter>
-    </ClInclude>
-    <ClInclude Include="Pirata.h">
-      <Filter>Header Files\Unidades</Filter>
-    </ClInclude>
-    <ClInclude Include="Inimigos.h">
       <Filter>Header Files\Unidades</Filter>
     </ClInclude>
     <ClInclude Include="Controlo_Escudo.h">
@@ -335,9 +320,6 @@
     <ClInclude Include="Mututis_Mutandis.h">
       <Filter>Header Files\Caractristicas</Filter>
     </ClInclude>
-    <ClInclude Include="Mxyzypykwi.h">
-      <Filter>Header Files\Caractristicas</Filter>
-    </ClInclude>
     <ClInclude Include="Operador.h">
       <Filter>Header Files\Caractristicas</Filter>
     </ClInclude>
@@ -359,15 +341,6 @@
     <ClInclude Include="Evento.h">
       <Filter>Header Files\Eventos</Filter>
     </ClInclude>
-    <ClInclude Include="Inimigo.h">
-      <Filter>Header Files\Unidades</Filter>
-    </ClInclude>
-    <ClInclude Include="Xenomorfo.h">
-      <Filter>Header Files\Unidades</Filter>
-    </ClInclude>
-    <ClInclude Include="Xenomorfos.h">
-      <Filter>Header Files\Unidades</Filter>
-    </ClInclude>
     <ClInclude Include="AtaquePiratas.h">
       <Filter>Header Files\Eventos</Filter>
     </ClInclude>
@@ -379,6 +352,42 @@
     </ClInclude>
     <ClInclude Include="Interacao.h">
       <Filter>Header Files\Nave</Filter>
+    </ClInclude>
+    <ClInclude Include="Tripulacao.h">
+      <Filter>Header Files\Unidades\Tripulação</Filter>
+    </ClInclude>
+    <ClInclude Include="Robot.h">
+      <Filter>Header Files\Unidades\Tripulação</Filter>
+    </ClInclude>
+    <ClInclude Include="Capitao.h">
+      <Filter>Header Files\Unidades\Tripulação</Filter>
+    </ClInclude>
+    <ClInclude Include="Casulo_Geigermorfo.h">
+      <Filter>Header Files\Unidades\Xenomorfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Blob.h">
+      <Filter>Header Files\Unidades\Xenomorfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Xenomorfo.h">
+      <Filter>Header Files\Caractristicas</Filter>
+    </ClInclude>
+    <ClInclude Include="Xenomorfos.h">
+      <Filter>Header Files\Unidades\Xenomorfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Inimigos.h">
+      <Filter>Header Files\Unidades\Inimigos</Filter>
+    </ClInclude>
+    <ClInclude Include="Pirata.h">
+      <Filter>Header Files\Unidades\Inimigos</Filter>
+    </ClInclude>
+    <ClInclude Include="Casulo.h">
+      <Filter>Header Files\Caractristicas</Filter>
+    </ClInclude>
+    <ClInclude Include="Inimigo.h">
+      <Filter>Header Files\Caractristicas</Filter>
+    </ClInclude>
+    <ClInclude Include="Mxyzypykwi.h">
+      <Filter>Header Files\Unidades\Xenomorfo</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

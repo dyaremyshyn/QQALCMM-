@@ -308,32 +308,29 @@ void Jogo::danoCampoCosmico(int dano) {
 }
 
 bool Jogo::existeRaioLaser() {
-	for (int j = 0; j < salas.size(); j++) // vê se temos algum raio laser na nave
-		if (salas[j]->getnome() == "Raio Laser")
-			return true;
-	return false;	
-}
-bool Jogo::operaPonte() {
-	if (salas[7]->guiaNave()) // poderá soferer alterações !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	if (VerificaExisteSala("Raio Laser"))
 		return true;
 	return false;
-	/*for (int i = 0; i < tripulantes.size(); i++) 
-		if (tripulantes[i]->getOndeEstou()->getnome() == "Ponte") 
-			return true;
-	return false;*/
 }
+
+bool Jogo::operaPonte() {
+	if (VerificaExisteTripulantes(7))
+		return true;
+	return false;
+}
+
 bool Jogo::operaRaioLaser() {
-	/*for (int i = 0; i < tripulantes.size(); i++) 
-		if (tripulantes[i]->getOndeEstou()->getnome() == "Raio Laser") 
-			return true;
-	return false;*/
-	return true;
+	int pos = 0;
+	for (int i = 0; i < salas.size(); i++) {
+		if (salas[i]->getnome() == "Raio Laser")
+			pos = i;
+	}
+	if (VerificaExisteTripulantes(pos))
+		return true;
+	return false;
 }
-<<<<<<< HEAD
-=======
 
 void Jogo::provocaBrecha()
 {
 	// criar uma brecha na nave (parte grafica)
 }
->>>>>>> origin/master

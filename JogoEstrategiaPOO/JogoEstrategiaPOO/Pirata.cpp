@@ -1,6 +1,6 @@
 #include "Pirata.h"
 
-Pirata::Pirata(string n="Pirata"):nome(n){}
+Pirata::Pirata(){}
 
 Pirata::~Pirata() { }
 

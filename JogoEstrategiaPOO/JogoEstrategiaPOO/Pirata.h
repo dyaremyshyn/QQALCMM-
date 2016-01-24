@@ -3,7 +3,8 @@
 class Pirata :public Unidades {
 	string nome;
 public:
-	Pirata(string n);
+	Pirata();
 	~Pirata();
 	string getNome();
+	void setOndeEstou();
 };

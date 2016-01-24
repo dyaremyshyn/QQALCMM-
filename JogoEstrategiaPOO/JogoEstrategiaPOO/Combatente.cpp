@@ -1,5 +1,4 @@
 #include "Combatente.h"
+#include "Caracteristicas.h"
 
-Combatente::Combatente()
-{
-}
+Combatente::Combatente(string n) : Caracteristicas(n){}

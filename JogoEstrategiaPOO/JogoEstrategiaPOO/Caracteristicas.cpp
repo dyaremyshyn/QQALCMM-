@@ -1,7 +1,5 @@
 #include "Caracteristicas.h"
-Caracteristicas::Caracteristicas()
-{
-}
+Caracteristicas::Caracteristicas(string n):nome(n){}
 
 Caracteristicas::~Caracteristicas()
 {

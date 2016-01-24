@@ -37,7 +37,6 @@ public:
 	
 	//int escreveIntegridade(int pos);
 private:
-	Jogo *jogo; //Ponteiro para poder aceder a classe jogo
 	bool jogo_criado;
 	void limpaParteDireita();
 	int opcaoEvento();

@@ -4,7 +4,7 @@ class Combatente :public Caracteristicas
 {
 
 public:
-	Combatente();
+	Combatente(string n);
 	~Combatente() {};
 
 };

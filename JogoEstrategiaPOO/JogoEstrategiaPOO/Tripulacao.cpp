@@ -1,25 +1,29 @@
 #include "Tripulacao.h"
 #include "MembroTripulacao.h"
+#include "Caracteristicas.h"
+
 char Tripulante::contador = 'a';
 
-//string Tripulante::incrementaid()
-//{
-//	/*stringstream ss;*/
-//	string nome(1,Tripulante::contador);
-//	/*ss << Tripulante::contador;
-//	ss >> nome;*/
-//	Tripulante::contador++;
-//	return nome;
-//}
 
 Tripulante::Tripulante() {
 	string n(1, contador);
 	nome = n;
 	contador++;
-	u->GanhaCaracteristica(new MembroTripulacao);
+	
+	vida = 100;
+	combate = false;
+
+	GanhaCaracteristica(new Respira("Respira"));
+	GanhaCaracteristica(new Reparador("Reparador"));
+	GanhaCaracteristica(new Combatente("Combatente"));
+	GanhaCaracteristica(new Operador("Operador"));
+	GanhaCaracteristica(new MembroTripulacao("MembroTripulacao"));
 }
 
-Tripulante::~Tripulante() {}
+Tripulante::~Tripulante() {
+	for (int i = 0; i < V_Caracteristicas.size(); i++)
+		delete V_Caracteristicas[i];
+}
 
 void Tripulante::reparaDanos(Sala *a) {
 	if (a -> getintegridade() < 100)
@@ -32,9 +36,33 @@ bool Tripulante::estouPonte(Sala *s) {
 	return false;
 }
 
-void Tripulante::setOndeEstou(Sala * s)
-{
-	ondeEstou = s;
+
+void Tripulante::inicioTurno() {
+	Sala *s = getOndeEstou();
+
+	for (int i = 0; i < V_Caracteristicas.size(); i++) {
+		if (V_Caracteristicas[i]->getnome() == "Respira") {
+			if (V_Caracteristicas[i]->respirarOxi(s)==false)
+				vida--;
+		}
+	}
+	if (s->getintegridade() == 100){
+		if (combate == false) {
+			operar = true;
+		}
+	}
 }
 
-string Tripulante::getNome() { return nome; }
+void Tripulante::finalTurno() {
+	Sala *s = getOndeEstou();
+
+	if (!combate) {
+		if(repararSala(s))
+	}
+
+}
+
+
+
+
+
