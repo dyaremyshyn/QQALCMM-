@@ -39,13 +39,13 @@ public:
 	string getNomeSala(int id) const;
 	string getTripulantes(int salai) const;
 	void PrimeirosTripulantes();
-<<<<<<< HEAD
+
 	bool VerificaExisteSala(string nome_sala);
 	bool VerificaExisteTripulantes(int pos);
-=======
+
 	
 	void gerirDano(int dano, string e); // terá que receber algo! 
->>>>>>> origin/master
+
 private:
 	bool chegouFim(int p);
 	bool existeRaioLaser();

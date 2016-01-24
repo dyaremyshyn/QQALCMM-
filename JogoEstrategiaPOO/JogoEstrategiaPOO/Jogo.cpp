@@ -292,7 +292,7 @@ void Jogo::invasaoPiratas() {
 	int s = 0 + (rand() % (int)(11 - 0 + 1));
 
 	for (int i = 0; i < x; i++) {
-		salas[s]->AdicionaUnidade(new Pirata("Pirata"));
+		salas[s]->AdicionaUnidade(new Pirata());
 	}
 }
 
